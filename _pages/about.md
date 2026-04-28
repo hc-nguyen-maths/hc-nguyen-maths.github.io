@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 Office 100</p>
-    <p>123 Institut Camille Jordan, Bâtiment Braconnier</p>
+    <p>Office 100 (1st Floor)</p>
+    <p>Institut Camille Jordan, Bâtiment Braconnier</p>
     <p>Université Claude Bernard Lyon 1, Villeurbanne. France. </p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
