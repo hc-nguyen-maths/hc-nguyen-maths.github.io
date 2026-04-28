@@ -272,7 +272,7 @@ scholar:
   last_name: [Nguyên]
   first_name: [Hai Châu]
 
-  style: ams
+  style: apa
   locale: en
 
   source: /_bibliography/
