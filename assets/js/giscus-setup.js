@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "hc-nguyen-maths/hnguyen.github.io",
+    "data-repo": "hc-nguyen-maths/hc-nguyen-maths.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
