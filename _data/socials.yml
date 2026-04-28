@@ -8,3 +8,23 @@ rss_icon: true # comment this line to hide the RSS icon
 scholar_userid:
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+
+# Identité académique
+github_username: hc-nguyen-maths
+orcid_id: 0000-0000-0000-0000  # quand tu en auras un
+arxiv_id:  # quand tu auras un papier sur arXiv
+inspirehep_id:  # idem
+scholar_userid:  # ID Google Scholar
+mathoverflow_id:  # si compte MathOverflow
+researchgate_profile:
+semanticscholar_id:
+
+# Réseaux sociaux
+linkedin_username: hai-châu-nguyên-964239145
+mastodon_username:  # format @user@instance, e.g. @hc-nguyen@mathstodon.xyz
+bluesky_url:  # URL complète de ton profil
+twitter_username:  # ou x_username dans certaines versions
+
+# Autres utiles
+hal_id:  # HAL (très pertinent en France pour les pré-publications)
+zbmath_id:
