@@ -11,20 +11,6 @@ scholar_userid:
 
 # Identité académique
 github_username: hc-nguyen-maths
-orcid_id: 0000-0000-0000-0000  # quand tu en auras un
-arxiv_id:  # quand tu auras un papier sur arXiv
-inspirehep_id:  # idem
-scholar_userid:  # ID Google Scholar
-mathoverflow_id:  # si compte MathOverflow
-researchgate_profile:
-semanticscholar_id:
 
 # Réseaux sociaux
 linkedin_username: hai-châu-nguyên-964239145
-mastodon_username:  # format @user@instance, e.g. @hc-nguyen@mathstodon.xyz
-bluesky_url:  # URL complète de ton profil
-twitter_username:  # ou x_username dans certaines versions
-
-# Autres utiles
-hal_id:  # HAL (très pertinent en France pour les pré-publications)
-zbmath_id:
