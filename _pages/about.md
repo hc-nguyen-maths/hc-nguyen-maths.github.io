@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student in Mathematical Physics. <a href='https://math.univ-lyon1.fr/'>Institut Camille Jordan</a>.
+subtitle: Doctorant en physique mathématique / PhD Student in Mathematical Physics. <a href='https://math.univ-lyon1.fr/icj/'>Institut Camille Jordan</a>.
 
 profile:
   align: right
