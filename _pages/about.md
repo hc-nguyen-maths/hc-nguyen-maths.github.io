@@ -2,33 +2,51 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD Student in Mathematical Physics. <a href='https://math.univ-lyon1.fr/'>Institut Camille Jordan</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>555 Office 100</p>
+    <p>123 Institut Camille Jordan, Bâtiment Braconnier</p>
+    <p>Université Claude Bernard Lyon 1, Villeurbanne. France. </p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## French version
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Je suis Hai Châu Nguyên, doctorant en mathématique à l'Institut Camille Jordan, Université Claude Bernard Lyon 1, sous la direction de Alessandra Frabetti & Leonid Ryvkin.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Ma recherche se situe à l'interface entre la **théorie des catégories**, la **géométrie différentielle** et la **physique mathématique**, en particulier la théorie classique et quantique des champs. Plus précisément, je m'intéresse aux structures algébriques qui apparaissent au-dessus des **espaces de configuration**. Ces espaces sont à la fois des objets géométriques riches et un cadre naturel pour décrire des systèmes de particules en physique.
+
+Je suis aussi particulièrement intéressé par la **pédagogie des mathématiques**, en particulier à destination des classes préparatoires aux grandes écoles d'ingénieur et des élèves curieux. J'organise mon approche des mathématiques autour d'idées transverses entre les mathématiques et leurs applications dans d'autres domaines des mathématiques, en physique, en ingénierie et plus généralement dans la science.
+
+Je consacre aussi du temps à des projets de **vulgarisation**, pour rendre accessibles à un public plus large et varié certains objets mathématiques et les intuitions profondes qu'ils incarnent.
+
+Plus de détails sont disponibles sur les pages correspondantes.
+
+## English version
+
+I am Hai Châu Nguyên, a PhD student in mathematics at Institut Camille Jordan, Université Claude Bernard Lyon 1, under the supervision of Alessandra Frabetti & Leonid Ryvkin
+
+My research lies at the interface of **category theory**, **differential geometry** and **mathematical physics** — in particular classical and quantum field theory. More precisely, I am interested in the algebraic structures that arise above **configuration spaces**, which parametrise the possible positions of a fixed number of particles in a given space. These spaces are both rich geometric objects and a natural framework for describing particle systems in physics.
+
+I am also deeply interested in **mathematics education**, particularly at the level of the French *classes préparatoires aux grandes écoles* and for curious students more broadly. I organise my approach to mathematics around transverse ideas, connecting mathematics to its applications in other areas of mathematics, in physics, in engineering, and more generally in science.
+
+I also dedicate part of my time to **outreach projects**, aiming to make certain mathematical objects accessible to a wider and more varied audience, and to share the pleasure of the ideas they hide.
+
+More details can be found on the relevant pages.
