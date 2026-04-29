@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About (À propos)
 permalink: /
 subtitle: Doctorant en physique mathématique / PhD Student in Mathematical Physics. <a href='https://math.univ-lyon1.fr/icj/'>Institut Camille Jordan</a>.
 
@@ -26,6 +26,8 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+This website is bilingual. It contains sections both in French and in English. In sections centered around research are in English while the Teaching section will be in French. As for the bloc section, it will contain mix.
 
 ## French version
 
