@@ -28,6 +28,7 @@ latest_posts:
 ---
 
 This website is bilingual: research-related sections are in English, while the teaching section is in French. The blog mixes both languages.
+
 Ce site est bilingue : les sections relatives à la recherche sont en anglais, la section enseignement est en français, et le blog mélange les deux langues.
 
 ## French version
