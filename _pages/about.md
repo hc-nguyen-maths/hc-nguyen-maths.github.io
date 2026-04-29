@@ -29,7 +29,7 @@ latest_posts:
 
 ## French version
 
-Je suis Hai Châu Nguyên, doctorant en mathématique à l'Institut Camille Jordan, Université Claude Bernard Lyon 1, sous la direction de Alessandra Frabetti & Leonid Ryvkin.
+Je suis Hai Châu Nguyên, doctorant en mathématique à l'Institut Camille Jordan, Université Claude Bernard Lyon 1, sous la direction de [Alessandra Frabetti](https://math.univ-lyon1.fr/~frabetti/) & [Leonid Ryvkin](https://www.ryvkin.eu/).
 
 Ma recherche se situe à l'interface entre la **théorie des catégories**, la **géométrie différentielle** et la **physique mathématique**, en particulier la théorie classique et quantique des champs. Plus précisément, je m'intéresse aux structures algébriques qui apparaissent au-dessus des **espaces de configuration**. Ces espaces sont à la fois des objets géométriques riches et un cadre naturel pour décrire des systèmes de particules en physique.
 
@@ -41,7 +41,7 @@ Plus de détails sont disponibles sur les pages correspondantes.
 
 ## English version
 
-I am Hai Châu Nguyên, a PhD student in mathematics at Institut Camille Jordan, Université Claude Bernard Lyon 1, under the supervision of Alessandra Frabetti & Leonid Ryvkin
+I am Hai Châu Nguyên, a PhD student in mathematics at Institut Camille Jordan, Université Claude Bernard Lyon 1, under the supervision of [Alessandra Frabetti](https://math.univ-lyon1.fr/~frabetti/) & [Leonid Ryvkin](https://www.ryvkin.eu/).
 
 My research lies at the interface of **category theory**, **differential geometry** and **mathematical physics** — in particular classical and quantum field theory. More precisely, I am interested in the algebraic structures that arise above **configuration spaces**, which parametrise the possible positions of a fixed number of particles in a given space. These spaces are both rich geometric objects and a natural framework for describing particle systems in physics.
 
