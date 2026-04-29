@@ -29,7 +29,6 @@ J'assure également des colles (interrogations orales) en classes préparatoires
 - **Lycée du Parc** — Classes : MPSI / MP* / PCSI / PC*, Mathématiques. (2020-2024)
 - **Lycée La Martinière Monplaisir** — Classes : MPSI, Mathématiques. (2022-2023)
 
-[Liste autant de lignes que de postes que tu as eus.]
 
 ## Vulgarisation et encadrement
 
@@ -46,7 +45,6 @@ J'interviens lors des éditions du [$\mathbb{TFJM}^2$](https://tfjm.org/), un to
 - **TFJM² 2026 & 2025 — Avignon, Lyon** : Jury.
 - **TFJM² 2021 & 2020 - Distanciel** : Jury.
 
-[Ajoute d'autres activités de vulgarisation si tu en as.]
 
 ## Supports
 
