@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 4
 cv_pdf: /assets/pdf/cv_fr.pdf # you can also use external links here
-cv_format: pdf
+cv_format: rendercv
 description: 
 toc:
   sidebar: left
