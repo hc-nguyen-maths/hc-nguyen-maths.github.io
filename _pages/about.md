@@ -27,7 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-This website is bilingual. It contains sections both in French and in English. In sections centered around research are in English while the Teaching section will be in French. As for the bloc section, it will contain mix.
+This website is bilingual: research-related sections are in English, while the teaching section is in French. The blog mixes both languages.
+Ce site est bilingue : les sections relatives à la recherche sont en anglais, la section enseignement est en français, et le blog mélange les deux langues.
 
 ## French version
 
