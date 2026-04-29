@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About (À propos)
+title: About
 permalink: /
 subtitle: Doctorant en physique mathématique / PhD Student in Mathematical Physics. <a href='https://math.univ-lyon1.fr/icj/'>Institut Camille Jordan</a>.
 
