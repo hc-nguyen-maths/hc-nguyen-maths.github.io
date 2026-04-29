@@ -7,25 +7,30 @@ nav: true
 nav_order: 2
 ---
 
-Ma recherche se situe à l'interface entre la **théorie des catégories**, la **géométrie différentielle** et la **physique mathématique**. Cette page rassemble une présentation un peu plus détaillée de mes axes principaux.
+My research lies at the interface of **category theory**, **differential geometry** and **mathematical physics**, with an algebraic and structural orientation. This page presents my main lines of work in slightly more detail than the home page.
 
-## Algèbres 2-Poisson sur les espaces de configuration
+## Equivariant 2-Poisson algebra bundles over configuration spaces
 
-[Paragraphe : qu'est-ce que c'est, pourquoi c'est intéressant, où ça mène. 4–6 phrases. C'est le cœur de ton papier en cours.]
+I study equivariant algebraic structures over **configuration spaces**, which parametrise the possible positions of a fixed number of points on a given manifold. These spaces appear naturally in field theory, where they geometrically encode configurations of particles or the supports of local observables.
 
-## Théorie classique et quantique des champs
+My current work constructs **equivariant 2-Poisson algebra bundles** over these spaces. The 2-Poisson condition is the structure that ensures the existence of an underlying Poisson algebra, suitable for quantisation. The construction is inspired by the algebraic framework introduced by A. Frabetti and developed in the line of work of R. Borcherds and E. Herscovich.
 
-[Paragraphe : ton lien avec ce domaine, les questions qui t'occupent. 3–5 phrases.]
+## Towards a quantum theory: Laplace pairing
 
-## Théorie des catégories appliquée
+The framework I develop is at present **classical**. The longer-term goal is to derive a quantisation procedure via a **Laplace pairing**, following the constructions of Borcherds revisited by Herscovich. The passage from classical to quantum along this route is not yet well understood in the equivariant setting, and I am interested in the obstructions that arise.
 
-[Paragraphe : comment tu utilises les catégories comme outil — opérades, espèces de structure, factorization algebras, etc. 3–5 phrases.]
+## Categorical tools
 
-## Travaux en cours
+The approach relies on several categorical structures, in particular **species** (in the sense of Joyal), **operads** and their **fibred** versions, and **2-monoidal structures**. These tools provide a uniform language for the combinatorics of configurations and the algebraic compatibilities between operations.
 
-- Article en préparation : *Equivariant 2-Poisson algebra bundles over configuration spaces* (voir [Publications](/publications/)).
-- [Autres projets si tu en as.]
+## Other interests and background
+
+I have a working knowledge of **orbifolds**, in which I originally developed constructions related to my current research before reformulating them in the equivariant setting. The two perspectives are largely interchangeable, but the equivariant formulation has proved more practical for my purposes.
+
+## Work in progress
+
+- *Equivariant 2-Poisson Algebra Bundles over Configuration Spaces*, in preparation. See the [Publications](/publications/) page.
 
 ---
 
-Pour échanger sur ces sujets ou si vous travaillez dans des domaines connexes, n'hésitez pas à me [contacter](mailto:hnguyen@math.univ-lyon1.fr).
+For exchanges on these topics, or if you work in related areas, please feel free to [contact me](mailto:hnguyen@math.univ-lyon1.fr).
