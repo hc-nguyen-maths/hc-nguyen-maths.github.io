@@ -17,11 +17,13 @@ My current work constructs **equivariant 2-Poisson algebra bundles** over these 
 
 ## Towards a quantum theory: Laplace pairing
 
-The framework I develop is at present **classical**. The longer-term goal is to derive a quantisation procedure via a **Laplace pairing**, following the constructions of Borcherds revisited by Herscovich. The passage from classical to quantum along this route is not yet well understood in the equivariant setting, and I am interested in the obstructions that arise.
+The framework I develop is at present **classical**. The longer-term goal is to derive a quantisation procedure via a **Laplace pairing**, in the spirit of the constructions of C. Brouder and A. Frabetti. The passage from classical to quantum along this route is not yet well understood in the equivariant setting, and I am interested in the obstructions that arise.
 
 ## Categorical tools
 
-The approach relies on several categorical structures, in particular **species** (in the sense of Joyal), **operads** and their **fibred** versions, and **2-monoidal structures**. These tools provide a uniform language for the combinatorics of configurations and the algebraic compatibilities between operations.
+## Categorical tools
+
+The approach relies on several categorical structures: **species** (in the sense of Joyal), **operads**, and **2-monoidal structures** in the line of R. Borcherds and E. Herscovich. As part of my current work, I am developing **fibred versions** of these structures, motivated by the needs of the equivariant setting.
 
 ## Other interests and background
 
