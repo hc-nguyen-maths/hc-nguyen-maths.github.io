@@ -51,15 +51,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-espaces-de-configuration-physique-musique-et-toblerone",
+        },{id: "post-",
         
-          title: "Espaces de configuration : physique, musique et toblerone",
+          title: "",
         
-        description: "Comment un accord de trois notes devient naturellement un toblerone?",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/configuration-spaces/";
+            window.location.href = "/blog/2026/2026-04-30-configuration-spaces/";
           
         },
       },{id: "news-site-personnel-mis-en-ligne",
