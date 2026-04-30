@@ -13,12 +13,12 @@ toc:
 
 ## Un accord, c'est quoi au juste ?
 
-Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do*mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un ensemble de notes, pas une liste. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
+Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do*mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un **ensemble** de notes, pas une **liste** ordonnée. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
 
 ## Du cercle chromatique au cercle continu
 
 Sur un piano, les notes forment une suite discrète : douze demi-tons par octave qui se referment sur eux-mêmes (le do de l'octave suivante "rejoint" celui de départ). C'est le cercle chromatique des musicologues. Faisons un bon d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble de $n$ points sur $\mathbb{S}^1$, sans ordre. L'espace de tous les accords possibles - celui dont chaque point représente un accord - est le $n$-ième espace de configuration de $\mathbb{S}^1$ (ou produit symétrique en topologie algébrique), noté 
-$$\mathrm{Conf}_n(\mathbb{S}^1) = \frac{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}{\mathfrak{S}_n}$$
+\[ \mathrm{Conf}_n(\mathbb{S}^1) = \frac{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}{\mathfrak{S}_n} \]
 où $\mathfrak{S}_n$ est le groupe symétrique qui oublie l'ordre des $n$ notes.
 
 ## Le cas $n=2$ : deux notes et le ruban de Möbius
