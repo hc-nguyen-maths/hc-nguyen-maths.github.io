@@ -9,6 +9,8 @@ related_posts: false
 toc: 
   beginning: true
 
+---
+
 ## Un accord, c'est quoi au juste ?
 
 Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do*mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un ensemble de notes, pas une liste. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
@@ -44,4 +46,3 @@ En théorie classique et quantique des champs. Les espaces de configuration appa
 
 
 *Pour aller plus loin, Dmitri Tymoczko explore systématiquement les liens entre théorie musicale et géométrie.*
----
