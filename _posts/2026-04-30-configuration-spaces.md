@@ -13,28 +13,37 @@ toc:
 
 ## Un accord, c'est quoi au juste ?
 
-Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do*mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un **ensemble** de notes, pas une **liste** ordonnée. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
+Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do-mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un **ensemble** de notes, pas une **liste** ordonnée. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
 
 ## Du cercle chromatique au cercle continu
 
 Sur un piano, les notes forment une suite discrète : douze demi-tons par octave qui se referment sur eux-mêmes (le do de l'octave suivante "rejoint" celui de départ). C'est le cercle chromatique des musicologues - un objet à douze cases.
 {% include figure.liquid loading="eager" path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique : 12 demi-tons par octave." %}
-Faisons un bon d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble (non ordonné) de $n$ points sur $\mathbb{S}^1$, sans ordre et éventuellement avec répétition. L'espace des ensembles ordonnés de notes (avec répétition) peut être modélisé par l'espace $\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \; \text{fois}}$, on appelle cet ensemble le $n$-ième espace des configuration ordonnées de $\mathbb{S}^1$ - dans ce cas, il s'agit d'un $n$-tore. Afin de ne pas tenir compte de l'ordre, on prend le quotient
-\[ \mathrm{Conf}_n(\mathbb{S}^1) = \frac{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}{\mathfrak{S}_n} \]
-où $\mathfrak{S}_n$ est le groupe symétrique qui agit sur le produit $\mathbb{S}^1 \times \ldots \times \mathbb{S}^1$ par permutation des coordonnées. L'espace $\mathrm{Conf}_n(\mathbb{S}^1)$ est l'espace géométrique de tous les accords possibles (à $n$ notes éventuellement répétées) - celui dont chaque point représente un accord. Cet espace est appelé le $n$-ième espace des configuration (non ordonnées) de $\mathbb{S}^1$, aussi appelé le produit symétrique de $\mathbb{S}^1$ en topologie algébrique. Contrairement à l'espace des configurations ordonnées de $\mathbb{S}^1$ qui sont des tores de haute dimension, l'espace des configuration non ordonnées est plus difficile à décrire.
+Faisons un bond d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble (non ordonné) de $n$ points sur $\mathbb{S}^1$, éventuellement avec répétition. Pour le modéliser, partons d'abord de l'espaces des $n$-uplets *ordonnés* de notes : $$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \; \text{fois}}.$$
+C'est le $n$-tore, un objet géométrique relativement simple : un produit de cercles. Mais un accord ne dépend pas de l'ordre des notes : il faut donc identifier les $n$-uplets qui ne diffèrent que par une permutation. On prend le quotient $$\mathrm{Conf}_n(\mathbb{S}^1) = (\mathbb{S}^1)^n/\mathfrak{S}_n,$$
+où $\mathfrak{S}_n$ est le groupe symétrique qui agit sur le produit $\mathbb{S}^1 \times \ldots \times \mathbb{S}^1$ par permutation des coordonnées. Cet espace géométrique s'appelle le $n$-ième espace de configuration, ou le $n$-ième produit symétrique en topologique algébrique - c'est l'espace de tous les accords possibles, dont chaque point représente un accord. Contrairement au $n$-tore $(\mathbb{S}^1)^n$ qui est très simple, le quotient $\mathrm{Conf}_n(\mathbb{S}^1)$ a une géométrie plus subtile. Voyons ce qu'on obtient pour les premières valeurs de $n$.
 
 ## Le cas $n=2$ : deux notes et le ruban de Möbius
 
-Commençons par le cas le plus simple pour illustrer : un accord à deux notes...
+Commençons par le cas le plus simple pour illustrer : un accord à deux notes. Commençons par l'espace des configurations ordonnées à $2$ points, il s'agit de l'espace $\mathbb{S}^1 \times \mathbb{S}^1$ : c'est un tore.
 
-## Le cas $n=3$ : trois notes et le toblerone twisté
+## Le cas $n=3$ : trois notes et le Toblerone twisté
 
 Le pas suivant - trois notes - est plus délicat à visualiser, mais reste à portée d'imagination.
 
 ## Le cas général : Théorème de Morton
 
-Dans l'article *Symmetric product of the circle* (1967), H. Morton montre le résultat suivant : pour tout $n \geqslant 1$, l'espace $\mathrm{Conf}_n(\mathbb{S}^1)$ est un fibré sur $\mathbb{S}^1$ dont les fibres sont des simplexes de dimension $n-1$. Ce fibré est de plus orientable si, et seulement si, $n$ est impair.
-Autrement dit : selon que $n$ est pair ou impair, le "Toblerone généralisé" est tordu de manière à préserver ou non l'orientation. La parité du nombre de notes joue un rôle topologique fondamental.
+Dans l'article *Symmetric product of the circle* (1967), H. Morton montre le résultat suivant : 
+
+**Théorème (Morton, 1967).** Pour tout $n \geqslant 1$, l'espace $\mathrm{Conf}_n(\mathbb{S}^1)$ est un fibré sur $\mathbb{S}^1$ dont les fibres sont des simplexes de dimension $n-1$. Ce fibré est de plus orientable si, et seulement si, $n$ est impair.
+
+***Démonstration (niveau avancé).** On voit $\mathbb{S}^1$ comme le groupe multiplicatif des nombres complexes de module $1$ et on considère l'application de multiplication 
+$$\mu : \mathrm{Conf}_n(\mathbb{S}^1) \longrightarrow \mathbb{S}^1, \qquad [z_1, \ldots, z_n] \longmapsto z_1 \ldots z_n.$$
+L'application est bien définie sur le quotient car le produit est commutatif.
+
+**Étape 1 - Identifier la fibre.** Fixons $w \in \mathbb{S}^1$, on note $\theta \in \mathbb{R}$ un argument de $w$. La fibre $\mu^{-1}(w)$ est l'ensemble des classes $[z_1, \ldots, z_n]$ telles que $z_1 \ldots z_n = w$. En prenant les arguments $z_k = e^{i \theta_k}$, la condition devient $\theta_1 + \ldots + \theta_n = theta \mod(2 \pi)$. Quitte à réordonner cycliquement les $z_k$, on suppose qu'ils apparaissent dans l'ordre trigonométrique sur le cercle, on note $\delta_k = \theta_{k+1} - \theta_k$ avec la convention $\theta_{n+1} = \theta_1 + 2 \pi$. Ces écarts vérifient 
+$$\theta_1 + \ldots + \theta_n = 2 \pi, \qquad \theta_k \geqslant 0$$
+et décrivent donc le simplexe standard $\Delta^{n-1}$ de dimension $n-1$.
 
 
 
