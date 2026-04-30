@@ -11,6 +11,8 @@ toc:
 
 ---
 
+{% include figure.liquid loading="eager" path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique : 12 demi-tons par octave." %}
+
 ## Un accord, c'est quoi au juste ?
 
 Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do*mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un **ensemble** de notes, pas une **liste** ordonnée. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
