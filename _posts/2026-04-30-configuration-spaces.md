@@ -18,7 +18,11 @@ Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do-mi* 
 ## Du cercle chromatique au cercle continu
 
 Sur un piano, les notes forment une suite discrète : douze demi-tons par octave qui se referment sur eux-mêmes (le do de l'octave suivante "rejoint" celui de départ). C'est le cercle chromatique des musicologues - un objet à douze cases.
-{% include figure.liquid loading="eager" path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique : 12 demi-tons par octave." %}
+<div class="row justify-content-center">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique" %}
+  </div>
+</div>
 Faisons un bond d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble (non ordonné) de $n$ points sur $\mathbb{S}^1$, éventuellement avec répétition. Pour le modéliser, partons d'abord de l'espaces des $n$-uplets *ordonnés* de notes : 
 
 $$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \text{ fois}}.$$
