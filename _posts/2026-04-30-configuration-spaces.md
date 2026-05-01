@@ -31,7 +31,9 @@ où $\mathfrak{S}_n$ est le groupe symétrique qui agit sur le produit $\mathbb{
 
 ## Le cas $n=2$ : deux notes et le ruban de Möbius
 
-Commençons par le cas le plus simple pour illustrer : un accord à deux notes. Commençons par l'espace des configurations ordonnées à $2$ points, il s'agit de l'espace $\mathbb{S}^1 \times \mathbb{S}^1$ : c'est un tore.
+Commençons par le cas le plus simple pour illustrer : un accord à deux notes. Commençons par l'espace des configurations ordonnées à $2$ points, il s'agit de l'espace $\mathbb{S}^1 \times \mathbb{S}^1$ : c'est le tore, que l'on visualise classiquement comme un carré dont on identifie les bords. Pour passer aux configurations non ordonnées, il faut identifier par l'action de $\mathfrak{S}_2$ qui échange les deux coordonnées le long de la diagonale $\theta_1 = \theta_2$ (panneau 1). 
+
+Un domaine fondamental pour cette action est obtenu en gardant la moitié du carré où $\theta_1 \leqslant \theta_2$ (panneau 2). Reste à comprendre comment réidentifier les deux bords bleus. En suivant la construction décrite ci-dessous, on obtient un **ruban de Möbius**, dont la diagonale devient le bord - le cercle des unissons. 
 
 ## Le cas $n=3$ : trois notes et le Toblerone twisté
 
