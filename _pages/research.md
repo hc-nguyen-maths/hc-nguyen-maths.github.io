@@ -21,8 +21,6 @@ The framework I develop is at present **classical**. The longer-term goal is to 
 
 ## Categorical tools
 
-## Categorical tools
-
 The approach relies on several categorical structures: **species** (in the sense of Joyal), **operads**, and **2-monoidal structures** in the line of R. Borcherds and E. Herscovich. As part of my current work, I am developing **fibred versions** of these structures, motivated by the needs of the equivariant setting.
 
 ## Other interests and background
