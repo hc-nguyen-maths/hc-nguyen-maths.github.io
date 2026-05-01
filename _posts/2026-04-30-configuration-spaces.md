@@ -4,7 +4,7 @@ layout: post
 title: "[FR] Espaces de configuration : physique, musique et toblerone"
 description: "Comment un accord de trois notes devient naturellement un toblerone?"
 tags: [topologie, géométrie, musique, vulgarisation]
-categories: recherche
+categories: [fr]
 related_posts: false
 toc: 
   beginning: true
