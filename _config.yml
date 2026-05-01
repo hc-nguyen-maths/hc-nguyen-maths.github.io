@@ -262,7 +262,7 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: []
-display_categories: []
+display_categories: ["fr", "en"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
