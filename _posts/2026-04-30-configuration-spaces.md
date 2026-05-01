@@ -49,19 +49,25 @@ $$\mu : \mathrm{Conf}_n(\mathbb{S}^1) \longrightarrow \mathbb{S}^1, \qquad [z_1,
 
 L'application est bien définie sur le quotient car le produit est commutatif.
 
-**Étape 1 - Identifier la fibre.** Fixons $w \in \mathbb{S}^1$, on note $\theta \in \mathbb{R}$ un argument de $w$. La fibre $\mu^{-1}(w)$ est l'ensemble des classes $[z_1, \ldots, z_n]$ telles que $z_1 \ldots z_n = w$. En prenant les arguments $z_k = e^{i \theta_k}$, la condition devient $\theta_1 + \ldots + \theta_n = theta \mod(2 \pi)$. Quitte à réordonner cycliquement les $z_k$, on suppose qu'ils apparaissent dans l'ordre trigonométrique sur le cercle, on note $\delta_k = \theta_{k+1} - \theta_k$ avec la convention $\theta_{n+1} = \theta_1 + 2 \pi$. Ces écarts vérifient 
+**Étape 1 - Identifier la fibre.** Fixons $w \in \mathbb{S}^1$, on note $\theta \in \mathbb{R}$ un argument de $w$. La fibre $\mu^{-1}(w)$ est l'ensemble des classes $[z_1, \ldots, z_n]$ telles que $z_1 \ldots z_n = w$. En prenant les arguments $z_k = e^{i \theta_k}$, la condition devient 
+
+$$\theta_1 + \ldots + \theta_n = \theta \mod(2 \pi).$$ 
+
+Pour paramétrer cette fibre, il faut briser la symétrie de l'accord en choisissant un point de "référence". Choisissons dans le représentant $(\theta_1, \ldots, \theta_n)$ tel que 
+
+On note $\delta_k = \theta_{k+1} - \theta_k$ avec la convention $\theta_{n+1} = \theta_1 + 2 \pi$. Ces écarts vérifient 
 
 $$\delta_1 + \ldots + \delta_n = 2 \pi, \qquad \delta_k \geqslant 0$$
 
-et décrivent donc le simplexe standard $\Delta^{n-1}$ de dimension $n-1$.
+et l'application $[z_1, \ldots, z_n] \longmapsto (\delta_1, \ldots, \delta_n)$ réalise un homéomorphisme entre la fibre $\mu^{-1}(w)$ et un simplexe $\Delta^{n-1}$ de dimension $n-1$. Le bord du simplexe (où certains $\delta_k$ s'annulent) correspond exactement aux accords où plusieurs notes coïncident.
 
-**Étape 2 - $\mu$ est une fibration localement triviale.** Sur tout arc ouvert $U \subset \mathbb{S}^1$, on a une détermination continue du logarithme complexe, l'association $w \mapsto \theta$ est continue et la construciton précédente donne un homéomorphisme
+**Étape 2 - $\mu$ est un fibré localement triviale.** Sur tout arc ouvert $U \subset \mathbb{S}^1$, on a une détermination continue du logarithme complexe, l'association $w \mapsto \theta$ est continue et la construciton précédente donne un homéomorphisme
 
 $$\mu^{-1}(U) \cong U \times \Delta^{n-1}.$$
 
-L'application $\mu$ est donc une fibration localement triviale au sens topologique. En revanche, on ne peut pas étendre l'argument continu à tout $\mathbb{S}^1$ - cela revient à dire qu'il n'existe pas de logarithme continu défini sur le cercle unité tout entier - c'est cette obstruction qui crée le twist l'on peut observer dans le cas du Ruban de Möbius. C'est ce qu'on va maintenant quantifier.
+L'application $\mu$ est donc un fibré localement trivial au sens topologique. En revanche, on ne peut pas étendre l'argument continu à tout $\mathbb{S}^1$ - cela revient à dire qu'il n'existe pas de logarithme continu défini sur le cercle unité tout entier - c'est cette obstruction qui crée le twist l'on peut observer dans le cas du Ruban de Möbius. C'est ce qu'on va maintenant quantifier.
 
-**Étape 3 - La monodromie est le $n$-cycle.** Suivons une fibre quand on parcourt $\mathbb{S}^1$ : l'argument $\theta$ augmente de $2 \pi$, donc le "premier point" $\theta_1 = \frac{\theta}{n}$ avance de $\Delta \theta_1 = \frac{2 \pi}{n}$. Chaque sommet $z_k = e^{i \theta_k}$ vient prendre la place de l'ancien $z_{k+1}$. Sur la fibre paramétré par les écarts $(\delta_1, \ldots, \delta_n)$, cette transformation se lit par une permutation cyclique 
+**Étape 3 - La monodromie est le $n$-cycle.** Suivons une fibre quand on parcourt $\mathbb{S}^1$ : l'argument $\theta$ augmente continûment de $2 \pi$, l'ancien sommet $z_2$ devient le nouveau sommet de référence. Plus généralement, chaque sommet $z_k = e^{i \theta_k}$ vient prendre la place de l'ancien $z_{k+1}$. Sur la fibre paramétré par les écarts $(\delta_1, \ldots, \delta_n)$, cette transformation se lit par une permutation cyclique 
 
 $$(\delta_1, \ldots, \delta_n) \longmapsto (\delta_n, \delta_1, \ldots, \delta_{n-1}).$$
 
