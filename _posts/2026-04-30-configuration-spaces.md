@@ -21,9 +21,10 @@ Sur un piano, les notes forment une suite discrète : douze demi-tons par octave
 {% include figure.liquid loading="eager" path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique : 12 demi-tons par octave." %}
 Faisons un bond d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble (non ordonné) de $n$ points sur $\mathbb{S}^1$, éventuellement avec répétition. Pour le modéliser, partons d'abord de l'espaces des $n$-uplets *ordonnés* de notes : 
 
-$$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \; \text{fois}}.$$
+$$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \text{ fois}}.$$
 
 C'est le $n$-tore, un objet géométrique relativement simple : un produit de cercles. Mais un accord ne dépend pas de l'ordre des notes : il faut donc identifier les $n$-uplets qui ne diffèrent que par une permutation. On prend le quotient 
+
 $$\mathrm{Conf}_n(\mathbb{S}^1) = (\mathbb{S}^1)^n/\mathfrak{S}_n,$$
 
 où $\mathfrak{S}_n$ est le groupe symétrique qui agit sur le produit $\mathbb{S}^1 \times \ldots \times \mathbb{S}^1$ par permutation des coordonnées. Cet espace géométrique s'appelle le $n$-ième espace de configuration, ou le $n$-ième produit symétrique en topologique algébrique - c'est l'espace de tous les accords possibles, dont chaque point représente un accord. Contrairement au $n$-tore $(\mathbb{S}^1)^n$ qui est très simple, le quotient $\mathrm{Conf}_n(\mathbb{S}^1)$ a une géométrie plus subtile. Voyons ce qu'on obtient pour les premières valeurs de $n$.
@@ -64,7 +65,7 @@ L'application $\mu$ est donc une fibration localement triviale au sens topologiq
 
 $$(\delta_1, \ldots, \delta_n) \longmapsto (\delta_n, \delta_1, \ldots, \delta_{n-1}).$$
 
-Le $n$-cycle $(1 \; 2 \; \ldots \; n)$, vue comme transformation linéaire de $\mathbb{R}^n$ permutant les coordonnées, a pour déterminant sa signature.
+Le $n$-cycle $(1, 2, \ldots, n)$, vue comme transformation linéaire de $\mathbb{R}^n$ permutant les coordonnées, a pour déterminant sa signature.
 
 - Si $n$ est impair, ce $n$-cycle est de signature $+1$ : la monodromie préserve l'orientation du simplexe et le fibré $\mu$ est **orientable**.
 
