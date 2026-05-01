@@ -62,8 +62,8 @@ ninja.data = [{
             window.location.href = "/blog/2026/configuration-spaces/";
           
         },
-      },{id: "news-site-personnel-mis-en-ligne",
-          title: 'Site personnel mis en ligne.',
+      },{id: "news-site-personnel-mis-en-ligne-et-mise-en-ligne-du-premier-post-espaces-de-configuration-physique-musique-et-toblerone",
+          title: 'Site personnel mis en ligne et mise en ligne du premier post :...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
