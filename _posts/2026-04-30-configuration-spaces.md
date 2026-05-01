@@ -21,7 +21,7 @@ Sur un piano, les notes forment une suite discrète : douze demi-tons par octave
 {% include figure.liquid loading="eager" path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique : 12 demi-tons par octave." %}
 Faisons un bond d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble (non ordonné) de $n$ points sur $\mathbb{S}^1$, éventuellement avec répétition. Pour le modéliser, partons d'abord de l'espaces des $n$-uplets *ordonnés* de notes : 
 
-$$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \text{ fois}}.$$
+$$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \; \text{ fois}}.$$
 
 C'est le $n$-tore, un objet géométrique relativement simple : un produit de cercles. Mais un accord ne dépend pas de l'ordre des notes : il faut donc identifier les $n$-uplets qui ne diffèrent que par une permutation. On prend le quotient 
 
@@ -32,12 +32,28 @@ où $\mathfrak{S}_n$ est le groupe symétrique qui agit sur le produit $\mathbb{
 ## Le cas $n=2$ : deux notes et le ruban de Möbius
 
 Commençons par le cas le plus simple pour illustrer : un accord à deux notes. Commençons par l'espace des configurations ordonnées à $2$ points, il s'agit de l'espace $\mathbb{S}^1 \times \mathbb{S}^1$ : c'est le tore, que l'on visualise classiquement comme un carré dont on identifie les bords. Pour passer aux configurations non ordonnées, il faut identifier par l'action de $\mathfrak{S}_2$ qui échange les deux coordonnées le long de la diagonale $\theta_1 = \theta_2$ (panneau 1). 
-
+{% include figure.liquid loading="eager" path="assets/img/blog/mobius_construction.png" class="img-fluid rounded z-depth-1" alt="Construction du ruban de Möbius comme espace de configuration" %}
 Un domaine fondamental pour cette action est obtenu en gardant la moitié du carré où $\theta_1 \leqslant \theta_2$ (panneau 2). Reste à comprendre comment réidentifier les deux bords bleus. En suivant la construction décrite ci-dessous, on obtient un **ruban de Möbius**, dont la diagonale devient le bord - le cercle des unissons. 
 
 ## Le cas $n=3$ : trois notes et le Toblerone twisté
 
-Le pas suivant - trois notes - est plus délicat à visualiser, mais reste à portée d'imagination.
+Le pas suivant - trois notes - est plus délicat à visualiser, mais reste à portée d'imagination. L'espace des configurations ordonnées à $3$ est le $3$-tore $(\mathbb{S}^1)^3$, il ne se plonge pas dans l'espace à $3$ dimensions. Cependant, on peut reprendre l'analogie du carré avec les bords identifiés mais avec une dimension supplémentaire pour avoir le $3$-tore : il s'agit d'un cube $[0,2\pi]^3$ dont les faces opposées sont identifiées (panneau 1). L'action de $\mathfrak{S}_3$ sur ce cube a six éléments - les permutations des trois coordonnées $(\theta_1, \theta_2, \theta_3)$ -, et un domaine fondamental s'obtient en imposant un ordre. Le choix le plus naturel est $0 \leqslant \theta_1 \leqslant \theta_2 \leqslant \theta_3 \leqslant 2 \pi$ qui découpe dans le cube un tétraèdre représentant $\frac{1}{6}$ du volume du cube (panneau 2).
+{% include figure.liquid loading="eager" path="assets/img/blog/toblerone_construction.png" class="img-fluid" alt="Construction du toblerone twisté à partir du 3-tore." %}
+À ce stade, la situation est plus claire après un changement de variables. Au lieu des coordonnées brutes $(\theta_1, \theta_2, \theta_3)$, paramétrons le tétraèdre par la position globale $\theta_1 \in [0,2 \pi]$ et les deux écarts $\delta_1 = \theta_2 - \theta_1$, $\delta_2 = \theta_3 - \theta_2$. Posons aussi $\delta_3 = 2 \pi - \delta_1 - \delta_2$. Les trois écarts vérifient 
+
+$$\delta_1 + \delta_2 + \delta_3 = 2 \pi, \qquad \delta_k \geqslant 0,$$ 
+
+et décrivent donc un **triangle équilatéral plein** $\Delta$. Le tétraèdre du panneau 2, vu dans ces nouvelles coordonnées, devient un prisme droit (ou toblerone) $\Delta \times [0,2 \pi]$ : à chaque hauteur $\theta_1$, on lit le triangle des écarts (panneau 3). 
+
+Reste à comprendre comment refermer le prisme. Il faut identifier la face supérieure $\theta_1 = 2 \pi$ avec la face inférieure $\theta_1 = 0$, mais **comment** ?
+
+Voici la subtilité : sur le $3$-tore, les coordonnées sont définies modulo $2 \pi$. Quand on suit un point dans le domaine fondamental et que l'on fait varier $\theta_1$ continûment de $0$ jusqu'à $2 \pi$, les autres coordonnées $\theta_2$ et $\theta_3$ avancent en parallèle et finissent par dépasser $2 \pi$. En les ramenant dans l'intervalle $[0,2\pi]$ et en réordonnant, on s'aperçoit que le **rôle des trois sommes s'est décalé**. Sur le triangle des écarts, cela se traduit par une rotation **cyclique** des sommets - autrement dit, une rotation de 120°. 
+
+Pour refermer le prisme, il ne faut donc pas identifier la face du haut avec celle du bas, mais **après une rotation de** $120°$. Le résultat est le **toblerone twisté** (panneau 4). Comme pour le ruban de Möbius, on peut lire les accords à $3$ notes sur cet objet : 
+
+- **l'intérieur** du toblerone correspond aux accords où les trois notes sont distinctes;
+- **les trois faces** correspondent aux accords où deux notes coïncident;
+- **l'arête centrale spiralée** correspond aux accords où toutes les notes coïncident.
 
 ## Le cas général : Théorème de Morton
 
