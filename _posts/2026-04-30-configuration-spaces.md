@@ -13,7 +13,7 @@ toc:
 
 ## Un accord, c'est quoi au juste ?
 
-Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do-mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un **ensemble** de notes, pas une **liste** ordonnée. Cette remarque qui semble anodine a une conséquence géométrique suprenante.
+Quand on joue *do-mi-sol* au piano, on entend un accord. Si on joue *sol-do-mi* - exactement les mêmes touches , mais dans un ordre différent - on entend un accord harmoniquement identique, appelé renversement en musique. L'ordre n'a pas d'importance en harmonie : un accord est un **ensemble** de notes, pas une **liste** ordonnée. Cette remarque qui semble anodine a une conséquence géométrique surprenante.
 
 ## Du cercle chromatique au cercle continu
 
@@ -21,7 +21,7 @@ Sur un piano, les notes forment une suite discrète : douze demi-tons par octave
 {% include figure.liquid loading="eager" path="assets/img/blog/chromatic.png" class="img-fluid rounded z-depth-1" alt="Le cercle chromatique : 12 demi-tons par octave." %}
 Faisons un bond d'abstraction : oublions les douze notes discrètes et imaginons un continuum de fréquences sur un cercle (typiquement ce qui se passe sur un violon), comme si l'on pouvait glisser sans s'arrêter d'une note à l'autre. Le cercle $\mathbb{S}^1$ représente alors l'espace géométrique de toutes les notes (à octave près), chaque point de cet espace géométrique correspond à une unique note (à octave près). Un accord à $n$ notes devient alors un ensemble (non ordonné) de $n$ points sur $\mathbb{S}^1$, éventuellement avec répétition. Pour le modéliser, partons d'abord de l'espaces des $n$-uplets *ordonnés* de notes : 
 
-$$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \; \text{ fois}}.$$
+$$\underbrace{\mathbb{S}^1 \times \ldots \times \mathbb{S}^1}_{n \text{ fois}}.$$
 
 C'est le $n$-tore, un objet géométrique relativement simple : un produit de cercles. Mais un accord ne dépend pas de l'ordre des notes : il faut donc identifier les $n$-uplets qui ne diffèrent que par une permutation. On prend le quotient 
 
@@ -55,9 +55,16 @@ Pour refermer le prisme, il ne faut donc pas identifier la face du haut avec cel
 - **les trois faces** correspondent aux accords où deux notes coïncident;
 - **l'arête centrale spiralée** correspond aux accords où toutes les notes coïncident.
 
+L'image suivante de l'espace $\mathrm{Conf}_3(\mathbb{S}^1)$ comme toblerone twisté a été produite par un graphiste. Une sculpture similaire existe à Stony Brook University, appelée Umbilic torus, mais la section du prisme est un triangle hyperbolique (deltoïde). 
+{% include figure.liquid loading="eager" path="assets/img/blog/conf.gif" class="img-fluid rounded z-depth-1" alt="L'espace des configuration à 3 points." %}
+
 ## Le cas général : Théorème de Morton
 
-Dans l'article *Symmetric product of the circle* (1967), H. Morton montre le résultat suivant : 
+Avant d'énoncer le résultat général, introduisons le vocabulaire géométrique qui permet de le formuler simplement. Les **simplexes** sont les généralisations en dimension supérieure des segments (1D), des triangles (2D) et des tétraèdres (3D). Le $n$-simplexe standard est défini par
+
+$$\Delta^n = \left\{ (a_0, \ldots, a_n) \in \mathbb{R}^{n+1}, \; a_0 + \ldots + a_n = 1, \; a_k \geqslant 0 \right\} = \left\{ (t_0, \ldots, t_n) \in \mathbb{R}^{n+1}, \; 0 \leqslant t_0 \leqslant \ldots \leqslant t_n \leqslant 1 \right\}.$$
+
+Il est de dimension $n$, même s'il est naturellement plongé dans $\mathbb{R}^{n+1}$ et la deuxième description montre même que $\Delta^n = \mathrm{Conf}_n\big( [0,1] \big)$. Ainsi, $\Delta^1$ est un segment, $\Delta^2$ est un triangle plein et $\Delta^3$ est un tétraèdre plein. Les résultats précédents montrent que les espaces $\mathrm{Conf}_2(\mathbb{S}^1)$ (resp. $\mathrm{Conf}_3(\mathbb{S}^1)$) sont obtenus avec un simplexe $\Delta^1$ (resp. $\Delta^2$) que l'on a fait "tourner" autour d'un cercle $\mathbb{S}^1$. La seule subtilité est que ce simplexe ne revient pas forcément sur lui-même sans modification : il peut revenir avec un **twist**. Dans l'article *Symmetric product of the circle* (1967), H. Morton généralise cette observation et montre le résultat suivant : 
 
 **Théorème (Morton, 1967).** Pour tout $n \geqslant 1$, l'espace $\mathrm{Conf}_n(\mathbb{S}^1)$ est un fibré sur $\mathbb{S}^1$ dont les fibres sont des simplexes de dimension $n-1$. Ce fibré est de plus orientable si, et seulement si, $n$ est impair.
 
@@ -79,7 +86,7 @@ $$\delta_1 + \ldots + \delta_n = 2 \pi, \qquad \delta_k \geqslant 0$$
 
 et l'application $[z_1, \ldots, z_n] \longmapsto (\delta_1, \ldots, \delta_n)$ réalise un homéomorphisme entre la fibre $\mu^{-1}(w)$ et un simplexe $\Delta^{n-1}$ de dimension $n-1$. Le bord du simplexe (où certains $\delta_k$ s'annulent) correspond exactement aux accords où plusieurs notes coïncident.
 
-**Étape 2 - $\mu$ est un fibré localement triviale.** Sur tout arc ouvert $U \subset \mathbb{S}^1$, on a une détermination continue du logarithme complexe, l'association $w \mapsto \theta$ est continue et la construciton précédente donne un homéomorphisme
+**Étape 2 - $\mu$ est un fibré localement trivial.** Sur tout arc ouvert $U \subset \mathbb{S}^1$, on a une détermination continue du logarithme complexe, l'association $w \mapsto \theta$ est continue et la construciton précédente donne un homéomorphisme
 
 $$\mu^{-1}(U) \cong U \times \Delta^{n-1}.$$
 
@@ -97,13 +104,24 @@ Le $n$-cycle $(1, 2, \ldots, n)$, vue comme transformation linéaire de $\mathbb
 
 Ceci achève la démonstration. $\blacksquare$
 
+Le théorème de Morton donne une description très explicite de $\mathrm{Conf}_n(\mathbb{S}^1)$ : un fibré sur le cercle, dont la fibre est un simplexe $\Delta^{n-1}$, avec une monodromie cyclique. Mais en général, la description géométrique complète des espaces de configuration $\mathrm{Conf}_n(M)$ est difficile. Cependant, il existe des résultats généraux puissants qui décrivent le type d'homotopie des espaces de configuration infinis comme le théorème de [Dold-Thom]{https://en.wikipedia.org/wiki/Dold%E2%80%93Thom_theorem} en le reliant à l'homotopie de la variété $M$ de base. Cependant, ce résultat traite la limite infinie des espaces de configurations, pas forcément chaque étage $\mathrm{Conf}_n(M)$ séparément.
+
+Des résultats sur l'homologie des espaces de configurations existent aussi (*The Homology of Symmetric Products*, R.J. Milgram, 1969), mais consistent plutôt des descriptions algébriques des invariants homologiques et ne fournissent pas toujours une image géométrique simple de l'espace lui-même.
+
+Quelques cas particuliers restent néanmoins très beaux. Comme le cas de la sphère $M = \mathbb{S}^2 \cong \mathbb{CP}^1$. Dans ce cas, on a une description topologique 
+
+$$\mathrm{Conf}_n(\mathbb{S}^2) \cong \mathbb{CP}^n.$$ 
+
+L'idée est qu'un $n$-uplet non ordonné de points de la sphère $\mathbb{S}^2$, avec multiplicités, peut être vu comme l'ensemble des racines d'un polynôme complexe de degré au plus $n$, défini à multiplication près. Les coefficients de ce polynôme donnent alors des coordonnées projectives.
+
+
 ## Bien au-delà de la musique
 
 L'analogie musicale est jolie, mais elle ne doit pas faire oublier que les espaces de configuration sont des objets fondamentaux, qui réapparaissent dans des contextes mathématiques et scientifiques très variés. En voici quatre, choisis parmi tant d'autres.
-En physique des particules indiscernables. Lorsqu'on étudie un système quantique de $n$ particules identiques (par exemple $n$ électrons), l'espace des configurations physiques est exactement $\mathrm{Conf}_n(M)/S_n$, où $M$ est l'espace ambiant. La topologie de cet espace contraint les statistiques possibles : en dimension $\geq 3$, on retrouve les bosons et les fermions ; mais en dimension 2, le groupe fondamental — le groupe de tresses — devient bien plus riche, et ouvre la porte aux anyons, des particules aux statistiques fractionnaires aujourd'hui activement étudiées en informatique quantique topologique.
-En robotique. Pour planifier le mouvement de $n$ robots dans un environnement $M$ sans qu'ils ne se heurtent, on travaille naturellement dans $\mathrm{Conf}_n(M)$. La topologie de cet espace mesure la complexité intrinsèque du problème de planification de mouvement, une notion formalisée par Michael Farber au début des années 2000. Plus la topologie est riche, plus aucun algorithme de planification ne peut être à la fois global et continu.
-En théorie des nœuds et des tresses. L'espace $\mathrm{Conf}_n(\mathbb{R}^2)$ est un espace classifiant pour le groupe de tresses d'Artin sur $n$ brins. À ce titre, il est l'objet géométrique central qui sous-tend la classification des nœuds, des entrelacs et des invariants quantiques associés.
-En théorie classique et quantique des champs. Les espaces de configuration apparaissent partout dès qu'il s'agit de décrire des positions de particules ou d'opérateurs ponctuels, et les structures algébriques qui vivent au-dessus de ces espaces — algèbres de Lie, opérades, algèbres de factorisation — encodent leurs interactions. C'est précisément sous cet angle que je les rencontre dans ma propre recherche : voir [Recherche]({{ '/research/' | relative_url }}).
+**En physique des particules indiscernables.** Lorsqu'on étudie un système quantique de $n$ particules identiques (par exemple $n$ électrons), l'espace des configurations physiques est exactement $\mathrm{Conf}_n(M)$, où $M$ est l'espace ambiant. La topologie de cet espace contraint les statistiques possibles : en dimension $\geq 3$, on retrouve les bosons et les fermions ; mais en dimension 2, son groupe fondamental — le groupe de tresses — devient bien plus riche, et ouvre la porte aux anyons, des particules aux statistiques fractionnaires aujourd'hui activement étudiées en informatique quantique topologique.
+**En robotique.** Pour planifier le mouvement de $n$ robots dans un environnement $M$ sans qu'ils ne se heurtent, on travaille naturellement dans $\mathrm{Conf}_n(M)$. La topologie de cet espace mesure la complexité intrinsèque du problème de planification de mouvement, une notion formalisée par Michael Farber au début des années 2000. Plus la topologie est riche, plus aucun algorithme de planification ne peut être à la fois global et continu.
+**En théorie des nœuds et des tresses.** L'espace $\mathrm{Conf}_n(\mathbb{R}^2)$ a pour groupe fondamental le groupe de tresses d'Artin $B_n$ sur $n$ brins. Plus précisément, cet espace est un espace d'Eilenberg-MacLane $K(B_n, 1)$, c'est-à-dire un espace classifiant pour le groupe de tresses. À ce titre, il est l'objet géométrique central qui sous-tend la classification des nœuds, des entrelacs et des invariants quantiques associés.
+**En théorie classique et quantique des champs.** Les espaces de configuration apparaissent partout dès qu'il s'agit de décrire des positions de particules ou d'opérateurs ponctuels, et les structures algébriques qui vivent au-dessus de ces espaces — algèbres de Lie, opérades, algèbres de factorisation — encodent leurs interactions. C'est précisément sous cet angle que je les rencontre dans ma propre recherche : voir [Recherche]({{ '/research/' | relative_url }}).
 
 
 *Pour aller plus loin, Dmitri Tymoczko explore systématiquement les liens entre théorie musicale et géométrie.*
