@@ -64,10 +64,12 @@ L'application $\mu$ est donc une fibration localement triviale au sens topologiq
 
 $$(\delta_1, \ldots, \delta_n) \longmapsto (\delta_n, \delta_1, \ldots, \delta_{n-1}).$$
 
-Le $n$-cycle $\begin{pmatrix} 1&2&\ldots&n \end{pmatrix}$, vue comme transformation linéaire de $\mathbb{R}^n$ permutant les coordonnées, a pour déterminant sa signature. \begin{itemize} 
-\item[$\bullet$] Si $n$ est impair, ce $n$-cycle est de signature $+1$ : la monodromie préserve l'orientation du simplexe et le fibré $\mu$ est **orientable**.
-\item[$\bullet$] Si $n$ est pair, ce $n$-cycle est de signature $-1$ : la monodromie renverse l'orientation et le fibré $\mu$ n'est **pas orientable**.
-\end{itemize}
+Le $n$-cycle $\begin{pmatrix} 1&2&\ldots&n \end{pmatrix}$, vue comme transformation linéaire de $\mathbb{R}^n$ permutant les coordonnées, a pour déterminant sa signature.
+
+- Si $n$ est impair, ce $n$-cycle est de signature $+1$ : la monodromie préserve l'orientation du simplexe et le fibré $\mu$ est **orientable**.
+
+- Si $n$ est pair, ce $n$-cycle est de signature $-1$ : la monodromie renverse l'orientation et le fibré $\mu$ n'est **pas orientable**.
+
 Ceci achève la démonstration. $\blacksquare$
 
 ## Bien au-delà de la musique
