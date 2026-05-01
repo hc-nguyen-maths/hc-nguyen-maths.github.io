@@ -74,11 +74,11 @@ Il est de dimension $n$, même s'il est naturellement plongé dans $\mathbb{R}^{
 
 ***Démonstration (niveau avancé).*** On voit $\mathbb{S}^1$ comme le groupe multiplicatif des nombres complexes de module $1$ et on considère l'application de multiplication 
 
-$$\mu : \mathrm{Conf}_n(\mathbb{S}^1) \longrightarrow \mathbb{S}^1, \qquad [z_1, \ldots, z_n] \longmapsto z_1 \ldots z_n.$$
+$$\mu : \mathrm{Conf}_n(\mathbb{S}^1) \longrightarrow \mathbb{S}^1, \qquad \lbrack z_1, \ldots, z_n \rbrack \longmapsto z_1 \ldots z_n.$$
 
 L'application est bien définie sur le quotient car le produit est commutatif.
 
-**Étape 1 - Identifier la fibre.** Fixons $w \in \mathbb{S}^1$, on note $\theta \in \mathbb{R}$ un argument de $w$. La fibre $\mu^{-1}(w)$ est l'ensemble des classes $[z_1, \ldots, z_n]$ telles que $z_1 \ldots z_n = w$. En prenant les arguments $z_k = e^{i \theta_k}$, la condition devient 
+**Étape 1 - Identifier la fibre.** Fixons $w \in \mathbb{S}^1$, on note $\theta \in \mathbb{R}$ un argument de $w$. La fibre $\mu^{-1}(w)$ est l'ensemble des classes $\lbrack z_1, \ldots, z_n \rbrack$ telles que $z_1 \ldots z_n = w$. En prenant les arguments $z_k = e^{i \theta_k}$, la condition devient 
 
 $$\theta_1 + \ldots + \theta_n = \theta \mod(2 \pi).$$ 
 
@@ -88,7 +88,7 @@ On note $\delta_k = \theta_{k+1} - \theta_k$ avec la convention $\theta_{n+1} = 
 
 $$\delta_1 + \ldots + \delta_n = 2 \pi, \qquad \delta_k \geqslant 0$$
 
-et l'application $[z_1, \ldots, z_n] \longmapsto (\delta_1, \ldots, \delta_n)$ réalise un homéomorphisme entre la fibre $\mu^{-1}(w)$ et un simplexe $\Delta^{n-1}$ de dimension $n-1$. Le bord du simplexe (où certains $\delta_k$ s'annulent) correspond exactement aux accords où plusieurs notes coïncident.
+et l'application $\lbrack z_1, \ldots, z_n \rbrack \longmapsto (\delta_1, \ldots, \delta_n)$ réalise un homéomorphisme entre la fibre $\mu^{-1}(w)$ et un simplexe $\Delta^{n-1}$ de dimension $n-1$. Le bord du simplexe (où certains $\delta_k$ s'annulent) correspond exactement aux accords où plusieurs notes coïncident.
 
 **Étape 2 - $\mu$ est un fibré localement trivial.** Sur tout arc ouvert $U \subset \mathbb{S}^1$, on a une détermination continue du logarithme complexe, l'association $w \mapsto \theta$ est continue et la construciton précédente donne un homéomorphisme
 
@@ -110,7 +110,7 @@ Ceci achève la démonstration. $\blacksquare$
 
 Le théorème de Morton donne une description très explicite de $\mathrm{Conf}_n(\mathbb{S}^1)$ : un fibré sur le cercle, dont la fibre est un simplexe $\Delta^{n-1}$, avec une monodromie cyclique. Mais en général, la description géométrique complète des espaces de configuration $\mathrm{Conf}_n(M)$ est difficile. On sait calculer certains invariants, et il existe même des résultats généraux très puissants, mais ils ne donnent pas toujours une image géométrique aussi concrète que le ruban de Möbius ou le toblerone twisté.
 
-Un résultat fondamental est le théorème de [Dold-Thom](https://en.wikipedia.org/wiki/Dold%E2%80%93Thom_theorem). Si l'on fixe un point de base dans $M$, on peut former l'espace de configuration infini en prenant la limite inductive $\mathrm{Conf}_{\infty}(M) = \lim \limits_{\rightarrow} \mathrm{Conf}_n(M)$. Le théorème de Dold-Thom relie alors l'homotopie de cet espace limite à l'homologie (réduite) de $M$ : 
+Un résultat fondamental est le théorème de [Dold-Thom](https://en.wikipedia.org/wiki/Dold%E2%80%93Thom_theorem). Si l'on fixe un point de base dans $M$, on peut former l'espace de configuration infini en prenant la limite inductive $\mathrm{Conf}_{\infty}(M) = \underline{\lim} \mathrm{Conf}_n(M)$. Le théorème de Dold-Thom relie alors l'homotopie de cet espace limite à l'homologie (réduite) de $M$ : 
 
 $$\pi_k \big( \mathrm{Conf}_{\infty}(M) \big) \cong \widetilde{H_k}(M; \mathbb{Z}).$$ 
 
@@ -126,9 +126,9 @@ L'idée est qu'un $n$-uplet non ordonné de points de la sphère $\mathbb{S}^2$,
 
 Attention toutefois: l'espace $\mathbb{CP}^n$ est naturellement une variété lisse (d'où l'idée d'identification topologique). Afin de poursuivre l'identification des singularités, il faut pouvoir identifier les singularités de $\mathrm{Conf}_n(\mathbb{S}^2)$ à travers l'identification précédente. Reconnaître ces singularités revient à détecter les racines multiples d'un polynôme à partir de ses coefficients. Algébriquement, cela se lit à travers le discriminant, ou plus finement à travers les diviseurs communs entre le polynôme et ses dérivées. On peut s'en faire une idée avec quelques petites valeurs de $n$. 
 
-Pour $n=2$, l'image est encore familière : un polynôme $aX^2 + bX + c \in \mathbb{C}[X]$ (correspondant à des coordonnées homogènes $[a:b:c] \in \mathbb{CP}^2$) a une racine multiple si, et seulement si, son discriminant $b^2 - 4ac = 0$. Ainsi, les singularités de $\mathrm{Conf}_2(\mathbb{S}^2)$ correspondent à la conique projective dans $\mathbb{CP}^2$ qui a pour équation $b^2 - 4ac = 0$.
+Pour $n=2$, l'image est encore familière : un polynôme $aX^2 + bX + c \in \mathbb{C} \lbrack X \rbrack$ (correspondant à des coordonnées homogènes $\lbrack a:b:c \rbrack \in \mathbb{CP}^2$) a une racine multiple si, et seulement si, son discriminant $b^2 - 4ac = 0$. Ainsi, les singularités de $\mathrm{Conf}_2(\mathbb{S}^2)$ correspondent à la conique projective dans $\mathbb{CP}^2$ qui a pour équation $b^2 - 4ac = 0$.
 
-Le cas $n=3$ est plus intéressant, car il existe désormais deux types de collisions : deux points peuvent coïncider, ou bien les trois points peuvent coïncider. La notion de discriminant s'étend pour les polynômes de degré supérieur et en particulier, les points singuliers de $\mathrm{Conf}_3(\mathbb{S}^2)$ dans $\mathbb{CP}^3$ correspondent à la surface donnée $\Delta(a,b,c,d)=0$, où $\Delta(a,b,c,d)$ est le discriminant de $aX^3 + bX^2 + cX + d$. Parmi ces points singuliers, les points correspondant à une collision triple correspondent aux polynômes $(\alpha X + \beta)^3$, ces polynômes décrivent dans $\mathbb{CP}^3$ la courbe cubique gauche décrite par $[\alpha:\beta] \mapsto [\alpha^3:3\alpha^2 \beta : 3 \alpha \beta^2 : \beta^3]$. Cette stratification naturelle selon la nature des collisions affine la notion de points singuliers : certains points sont "plus singuliers" que d'autres.
+Le cas $n=3$ est plus intéressant, car il existe désormais deux types de collisions : deux points peuvent coïncider, ou bien les trois points peuvent coïncider. La notion de discriminant s'étend pour les polynômes de degré supérieur et en particulier, les points singuliers de $\mathrm{Conf}_3(\mathbb{S}^2)$ dans $\mathbb{CP}^3$ correspondent à la surface donnée $\Delta(a,b,c,d)=0$, où $\Delta(a,b,c,d)$ est le discriminant de $aX^3 + bX^2 + cX + d$. Parmi ces points singuliers, les points correspondant à une collision triple correspondent aux polynômes $(\alpha X + \beta)^3$, ces polynômes décrivent dans $\mathbb{CP}^3$ la courbe cubique gauche décrite par $\lbrack \alpha : \beta \rbrack \mapsto \lbrack \alpha^3 : 3\alpha^2 \beta : 3 \alpha \beta^2 : \beta^3 \rbrack$. Cette stratification naturelle selon la nature des collisions affine la notion de points singuliers : certains points sont "plus singuliers" que d'autres.
 
 ## Bien au-delà de la musique
 
