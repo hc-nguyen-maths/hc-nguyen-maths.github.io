@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-fr-espaces-de-configuration-physique-musique-et-toblerone",
+        },{id: "post-fr-le-miracle-de-la-table-de-multiplication",
+        
+          title: "[FR] Le miracle de la table de multiplication",
+        
+        description: "Pourquoi un enfant peut connaître sa table de 6 sans connaître sa table de 8 - et pourquoi il a moins tort qu&#39;on ne le croit.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/multiplication/";
+          
+        },
+      },{id: "post-fr-espaces-de-configuration-physique-musique-et-toblerone",
         
           title: "[FR] Espaces de configuration : physique, musique et toblerone",
         
