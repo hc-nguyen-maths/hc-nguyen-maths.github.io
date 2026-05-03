@@ -59,7 +59,7 @@ Remarquons cependant qu'aucune des deux présentations "simples" de la commutati
 
 L'itération introduit une asymétrie de rôles : $a$ est un opérateur qui agit sur $b$. Ces deux objets ne vivent pas dans le même monde, et la commutativité affirme qu'ils sont identifiés - ce passage d'une action à une opération binaire interne que l'on a discuté au paragraphe précédent. La faille ici est dans la nature des objets. 
 
-Le rectangle, lui, introduit un saut dimensionnel. Il représente le produit de deux **longueurs** (ou de deux quantités linéaires) par une **aire** - précisément la situation $3 \; \mathrm{m} \times 2 \; \mathrm{m} = 6 \; \mathrm{m}^2$ que l'on signalait au début du billet, et qui n'avait alors rien d'innocent. L'argument fonctionne parce que l'on s'autorise tacitement à monter dans la dimension supérieure le temps de la preuve, puis redescendre. La faille ici est dans les unités.
+Le rectangle, lui, introduit un saut dimensionnel. Il représente le produit de deux **longueurs** (ou de deux quantités linéaires) par une **aire** - précisément la situation $3 \mathrm{m} \times 2 \mathrm{m} = 6 \mathrm{m}^2$ que l'on signalait au début du billet, et qui n'avait alors rien d'innocent. L'argument fonctionne parce que l'on s'autorise tacitement à monter dans la dimension supérieure le temps de la preuve, puis redescendre. La faille ici est dans les unités.
 
 L'argument du produit cartésien ne fait ni l'un, ni l'autre et certainement la plus "propre" des trois. Mais il a un coût : l'abstraction - il a fallu sortir des longueurs, des paquets, du concret, pour aller dans le formalisme des ensembles finis et de leurs cardinaux. C'est une autre forme de saut, simplement plus tardif dans la pensée.
 
