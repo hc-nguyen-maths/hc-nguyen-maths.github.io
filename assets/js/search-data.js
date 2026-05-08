@@ -77,7 +77,7 @@ ninja.data = [{
           title: '🇫🇷 Site personnel mis en ligne et mise en ligne du premier post...',
           description: "",
           section: "News",},{id: "news-deuxième-billet-de-blog-fr-le-miracle-de-la-table-de-multiplication-second-blog-post-fr-le-miracle-de-la-table-de-multiplication",
-          title: 'Deuxième billet de blog : [FR] Le miracle de la table de multiplication....',
+          title: '🇫🇷 Deuxième billet de blog : [FR] Le miracle de la table de...',
           description: "",
           section: "News",},{id: "news-premier-preprint-déposé-sur-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces-first-preprint-submitted-on-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces",
           title: 'Premier preprint déposé sur arXiv : Equivariant Poisson 2-Algebra Bundles over Configuration Spaces....',
