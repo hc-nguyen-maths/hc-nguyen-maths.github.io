@@ -80,7 +80,7 @@ ninja.data = [{
           title: '🇫🇷 Deuxième billet de blog : [FR] Le miracle de la table de...',
           description: "",
           section: "News",},{id: "news-premier-preprint-déposé-sur-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces-first-preprint-submitted-on-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces",
-          title: 'Premier preprint déposé sur arXiv : Equivariant Poisson 2-Algebra Bundles over Configuration Spaces....',
+          title: '🇫🇷 Premier preprint déposé sur arXiv : Equivariant Poisson 2-Algebra Bundles over Configuration...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
