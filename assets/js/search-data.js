@@ -73,7 +73,7 @@ ninja.data = [{
             window.location.href = "/blog/2026/configuration-spaces/";
           
         },
-      },{id: "news-site-personnel-mis-en-ligne-et-mise-en-ligne-du-premier-post-espaces-de-configuration-physique-musique-et-toblerone",
+      },{id: "news-site-personnel-mis-en-ligne-et-mise-en-ligne-du-premier-post-fr-espaces-de-configuration-physique-musique-et-toblerone-personal-website-online-and-first-blog-post-uploaded-fr-espaces-de-configuration-physique-musique-et-toblerone",
           title: 'Site personnel mis en ligne et mise en ligne du premier post :...',
           description: "",
           section: "News",},{id: "news-deuxième-billet-de-blog-le-miracle-de-la-table-de-multiplication",
