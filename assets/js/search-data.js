@@ -83,10 +83,12 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-premier-preprint-déposé-sur-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces-first-preprint-submitted-on-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces",
-          title: 'Premier preprint déposé sur arXiv : Equivariant Poisson 2-Algebra Bundles over Configuration Spaces....',
+            },},{id: "news-announcement-3",
+          title: 'Announcement_3',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
