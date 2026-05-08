@@ -74,7 +74,7 @@ ninja.data = [{
           
         },
       },{id: "news-site-personnel-mis-en-ligne-et-mise-en-ligne-du-premier-post-fr-espaces-de-configuration-physique-musique-et-toblerone-personal-website-online-and-first-blog-post-uploaded-fr-espaces-de-configuration-physique-musique-et-toblerone",
-          title: 'Site personnel mis en ligne et mise en ligne du premier post :...',
+          title: '🇫🇷 Site personnel mis en ligne et mise en ligne du premier post...',
           description: "",
           section: "News",},{id: "news-deuxième-billet-de-blog-fr-le-miracle-de-la-table-de-multiplication-second-blog-post-fr-le-miracle-de-la-table-de-multiplication",
           title: 'Deuxième billet de blog : [FR] Le miracle de la table de multiplication....',
