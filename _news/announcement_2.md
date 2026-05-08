@@ -5,4 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Deuxième billet de blog : [*Le miracle de la table de multiplication*](https://hc-nguyen-maths.github.io/blog/2026/multiplication/).
+Deuxième billet de blog : [*\[FR\] Le miracle de la table de multiplication*](https://hc-nguyen-maths.github.io/blog/2026/multiplication/).
+
+Second blog post : [*\[FR\] Le miracle de la table de multiplication*](https://hc-nguyen-maths.github.io/blog/2026/multiplication/).
