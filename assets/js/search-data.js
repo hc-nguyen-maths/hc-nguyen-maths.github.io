@@ -76,17 +76,13 @@ ninja.data = [{
       },{id: "news-site-personnel-mis-en-ligne-et-mise-en-ligne-du-premier-post-fr-espaces-de-configuration-physique-musique-et-toblerone-personal-website-online-and-first-blog-post-uploaded-fr-espaces-de-configuration-physique-musique-et-toblerone",
           title: 'Site personnel mis en ligne et mise en ligne du premier post :...',
           description: "",
-          section: "News",},{id: "news-announcement-2",
-          title: 'Announcement_2',
+          section: "News",},{id: "news-deuxième-billet-de-blog-fr-le-miracle-de-la-table-de-multiplication-second-blog-post-fr-le-miracle-de-la-table-de-multiplication",
+          title: 'Deuxième billet de blog : [FR] Le miracle de la table de multiplication....',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-announcement-3",
-          title: 'Announcement_3',
+          section: "News",},{id: "news-premier-preprint-déposé-sur-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces-first-preprint-submitted-on-arxiv-equivariant-poisson-2-algebra-bundles-over-configuration-spaces",
+          title: 'Premier preprint déposé sur arXiv : Equivariant Poisson 2-Algebra Bundles over Configuration Spaces....',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_3/";
-            },},{id: "projects-project-1",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
