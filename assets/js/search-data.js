@@ -73,12 +73,10 @@ ninja.data = [{
             window.location.href = "/blog/2026/configuration-spaces/";
           
         },
-      },{id: "news-announcement-1",
-          title: 'Announcement_1',
+      },{id: "news-site-personnel-mis-en-ligne-et-mise-en-ligne-du-premier-post-fr-espaces-de-configuration-physique-musique-et-toblerone-personal-website-online-and-first-blog-post-uploaded-fr-espaces-de-configuration-physique-musique-et-toblerone",
+          title: 'Site personnel mis en ligne et mise en ligne du premier post :...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_1/";
-            },},{id: "news-announcement-2",
+          section: "News",},{id: "news-announcement-2",
           title: 'Announcement_2',
           description: "",
           section: "News",handler: () => {
