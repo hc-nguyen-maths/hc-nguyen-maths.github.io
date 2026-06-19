@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-fr-union-d-39-ensembles-et-somme-d-39-espaces-plus-qu-39-une-analogie-une-universalité",
+        },{id: "post-fr-la-trace-des-endomorphismes",
+        
+          title: "[FR] La trace des endomorphismes",
+        
+        description: "Le programme de MPSI introduit le déterminant d&#39;un endomorphisme par une propriété indépendante du choix de base. L&#39;objectif de ce billet est de l&#39;obtenir pour la trace.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/trace/";
+          
+        },
+      },{id: "post-fr-union-d-39-ensembles-et-somme-d-39-espaces-plus-qu-39-une-analogie-une-universalité",
         
           title: "[FR] Union d&#39;ensembles et somme d&#39;espaces : plus qu&#39;une analogie, une universalité",
         
@@ -71,17 +82,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/multiplication/";
-          
-        },
-      },{id: "post-fr-la-trace-des-endomorphismes",
-        
-          title: "[FR] La trace des endomorphismes",
-        
-        description: "Le programme de MPSI introduit le déterminant d&#39;un endomorphisme par une propriété indépendante du choix de base. L&#39;objectif de ce billet est de l&#39;obtenir pour la trace.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/trace/";
           
         },
       },{id: "post-fr-espaces-de-configuration-physique-musique-et-toblerone",
