@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-fr-la-trace-des-endomorphismes",
+        },{id: "post-fr-limites-inductive-et-projective-deux-objets-limites-différents",
+        
+          title: "[FR] Limites inductive et projective -- Deux objets limites différents",
+        
+        description: "Contrairement à la limite des suites de nombres, la notion de limites d&#39;une famille d&#39;objets plus riches -- ensembles, espaces vectoriels, anneaux -- la situation devient plus subtile.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/limites/";
+          
+        },
+      },{id: "post-fr-la-trace-des-endomorphismes",
         
           title: "[FR] La trace des endomorphismes",
         
