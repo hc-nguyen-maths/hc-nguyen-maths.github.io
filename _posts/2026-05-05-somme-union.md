@@ -7,6 +7,7 @@ tags: [algèbre, didactique, vulgarisation]
 categories: [fr]
 related_posts: false
 draft: true
+pusblished: false
 toc: 
   beginning: true
 
