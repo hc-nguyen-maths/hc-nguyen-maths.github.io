@@ -31,6 +31,6 @@ Autrement dit, chaque composante est simplement réécrite dans les nouvelles va
 
 En revanche, un champ de vecteurs n'est pas seulement la donnée de trois nombres en chaque point. C'est la donnée d'une **flèche** en chaque point. Par exemple, dans les coordonnées cartésiennes usuelles, un champ de vecteurs peut s'écrire 
 
-$$\vv{V}(x,y,z) = V_x(x,y,z) \vv{e_x} + V_y(x,y,z) \vv{e_y} + V_z(x,y,z) \vv{e_z},$$
+$$\overrightarrow{V}(x,y,z) = V_x(x,y,z) \overrightarrow{e_x} + V_y(x,y,z) \overrightarrow{e_y} + V_z(x,y,z) \overrightarrow{e_z},$$
 
-où $$\vv{e_x}, \vv{e_y}, \vv{e_z}$$ désignent les directions cartésiennes usuelles.
+où $$\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z}$$ désignent les directions cartésiennes usuelles.
