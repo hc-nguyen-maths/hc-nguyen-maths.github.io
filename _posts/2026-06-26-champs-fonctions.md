@@ -48,7 +48,7 @@ Les composantes cylindriques sont alors données par
 $$\left\{ \begin{array}{lll}
 V_{\rho}(\rho, \theta, z) &=& \cos(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \sin(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\
 V_{\theta}(\rho, \theta, z) &=& - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\ 
-V_z(\rho, \theta, z) &=& V_z(\rho \cos \theta, \rho \sin \theta, z) \end{array}.$$
+V_z(\rho, \theta, z) &=& V_z(\rho \cos \theta, \rho \sin \theta, z) \end{array} \right. .$$
 
 Cette fois, les composantes se mélangent. C'est cela la différence essentielle.
 
