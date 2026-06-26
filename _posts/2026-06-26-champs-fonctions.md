@@ -47,7 +47,7 @@ Les composantes cylindriques sont alors données par
 
 $$\left\{ \begin{array}{lll}
 V_{\rho}(\rho, \theta, z) &=& \cos(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \sin(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\
-V_{\theta}(\rho, \theta, z) &=& - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\ 
+V_{\theta}(\rho, \theta, z) &=& - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\ 
 V_z(\rho, \theta, z) &=& V_z(\rho \cos \theta, \rho \sin \theta, z) \end{array} \right. .$$
 
 Cette fois, les composantes se mélangent. C'est cela la différence essentielle.
@@ -81,7 +81,7 @@ Big) \in \mathbb{R}^3 \setminus \left\{ (x,0,z) \in \mathbb{R}^3, \; x \leqslant
 
 ou encore, 
 
-$$\Phi_{\text{sphérique}} : (r,\theta,\varphi) \in \; ]0,+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi, \pi[ \; \longmapsto \Big( r \sin(\theta) \cos(\varphi), r \sin(\theta) \sin(\varphi), r \cos(\theta) \Big) \in \; ]0+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi,\pi[.$$
+$$\Phi_{\text{sphérique}} : (r,\theta,\varphi) \in \; ]0,+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi, \pi[ \; \longmapsto \Big( r \sin(\theta) \cos(\varphi), r \sin(\theta) \sin(\varphi), r \cos(\theta) \Big) \in \; ]0,+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi,\pi[.$$
 
 Les nombres $$(\rho, \theta, z)$$ (ou $$(\rho,\theta,\varphi)$$) ne sont donc pas le point lui-même : ce sont des **étiquettes numériques** qui permettent de **retrouver** le point. Remarquons aussi que ces coordonnées ne décrivent pas tout l'espace d'un seul coup sans ambiguïté : un système de coordonnées est toujours **local**.
 
@@ -111,8 +111,10 @@ $$\overrightarrow{V}(p) = V^1_{\Phi}(q) \overrightarrow{E_{1,\Phi}}(p) + \cdots 
 
 Les fonctions $$V^i_{\Phi} : \Omega \rightarrow \mathbb{R}$$ sont les composantes du champ de vecteurs $$\overrightarrow{V}$$ dans le système de coordonnées donné par $$\Phi$$. Il faut bien noter que ces composantes dépendent du choix de coordonnées. Le champ de vecteurs $$\overrightarrow{V}$$, lui, est l'objet géométrique : c'est la flèche attachée à chaque point.
 
-En notation matricielle, on note $$\overrightarrow{V}_{\Phi}(q) = \begin{pmatrix} V_{\Phi}^1(q) \\ \vdots \\ V_{\Phi}^N(q) \end{pmatrix}$$ la colonne des composantes. Cette colonne de composante représente l'objet géométrique $$\overrightarrow{V}(p)$$ et y est reliée par 
+En notation matricielle, on note $$\overrightarrow{V}_{\Phi}(q) = \begin{pmatrix} V_{\Phi}^1(q) \\ \vdots \\ V_{\Phi}^N(q) \end{pmatrix}$$ la colonne des composantes. Cette colonne de composante n'est pas l'objet géométrique lui-même : elle en est l'écriture dans le repère engendré par les coordonnées. Plus précisément, on a la relation : 
 
 $$\overrightarrow{V}(p) = \mathrm{d} \Phi(q) \cdot \Big( \overrightarrow{V}_{\Phi}(q) \Big).$$
 
-Cette relation nous dit que pour obtenir les composantes du champ de vecteurs dans les coordonnées $$\Phi$$, on évalue d'abord le champ au point physique $$p=\Phi(q)$$, puis on exprime le vecteur obtenu dans le repère engendré par les coordonnées.
+Cette relation nous dit que pour obtenir les composantes du champ de vecteurs dans les coordonnées $$\Phi$$, on évalue d'abord le champ au point physique $$p=\Phi(q)$$, puis on exprime le vecteur obtenu dans le repère engendré par les coordonnées. En résumé,
+
+$$\boxed{ \text{Un changement de coordonnées ne réécrit pas seulement les points : il change aussi le repère local, et donc la manière dont un champ de vecteurs est représenté.}}$$
