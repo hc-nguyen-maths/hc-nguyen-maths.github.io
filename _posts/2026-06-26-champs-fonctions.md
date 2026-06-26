@@ -70,11 +70,11 @@ Et une flèche ne se transforme pas comme une simple liste de trois fonctions sc
 
 Repassons à une description mathématique cohérente. Avant de comparer une fonction à valeurs vectorielles et un champ de vecteurs, il faut préciser ce que l'on entendait dans le paragraphe précédent par "**coordonnées**". L'idée physique est simple : un système de coordonnées est une manière simplement de repérer les points de l'espace par des nombres. Par exemple, dans l'espace usuel $$\mathbb{R}^3$$, les coordonnées cartésiennes repèrent un point par $$(x,y,z)$$ tandis que les coordonnées cylindriques le repèrent par $$(\rho, \theta, z)$$.
 
-Mathématiquement, un système de coordonnées sur un ouvert $$U \subset \mathbb{R}^N$$ est donnée par un $${\mathcal C}^1$$-difféomorphisme entre un ouvert $$\Omega$$ de $$\mathbb{R}^N$$ et $$U$$ :
+**Ce qu'est un système de coordonnées.** Mathématiquement, un système de coordonnées sur un ouvert $$U \subset \mathbb{R}^N$$ est donnée par un $${\mathcal C}^1$$-difféomorphisme entre un ouvert $$\Omega$$ de $$\mathbb{R}^N$$ et $$U$$ :
 
 $$\Phi : \Omega \subset \mathbb{R}^N \longrightarrow U \subset \mathbb{R}^N,$$
 
-c'est-à-dire $$\Phi$$ est une application de classe $${\mathcal C}^1$$ bijective, dont la bijection réciproque est aussi lisse. Ici, $$\Omega$$ est l'espace des coordonnées, et $$U$$ est la région physique de l'espace que l'on décrit. Si $$q = (q^1, q^2, q^3) \in \Omega$$, alors $$p = \Phi(q)$$ est le point de l'espace correspondant à ces coordonnées. Par exemple, on a 
+c'est-à-dire $$\Phi$$ est une application de classe $${\mathcal C}^1$$ bijective, dont la bijection réciproque est aussi lisse. Ici, $$\Omega$$ est l'espace des coordonnées, et $$U$$ est la région physique de l'espace que l'on décrit. Si $$q = (q^1, \dots, q^N) \in \Omega$$, alors $$p = \Phi(q)$$ est le point de l'espace correspondant à ces coordonnées. Par exemple, on a 
 
 $$\Phi_{\text{cylindrique}} : (\rho, \theta, z) \in \; ]0,+\infty[ \; \times \; ]-\pi, \pi[ \; \times \mathbb{R} \longmapsto \big( \rho \cos(\theta), \rho \sin(\theta), z \big) \in \mathbb{R}^3 \setminus \left\{ (x,0,z) \in \mathbb{R}^3, \; x \leqslant 0 \right\}.$$
 
@@ -83,3 +83,9 @@ ou encore,
 $$\Phi_{\text{sphérique}} : (r,\theta,\varphi) \in \; ]0,+\infty[ \; \times ]0,\pi[ \; \times \; ]-\pi, \pi[ \; \longmapsto \big( r \sin(\theta) \cos(\varphi), r \sin(\theta) \sin(\varphi), r \cos(\theta) \big) \in \; ]0+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi,\pi[.$$
 
 Les nombres $$(\rho, \theta, z)$$ (ou $$(\rho,\theta,\varphi)$$) ne sont donc pas le point lui-même : ce sont des **étiquettes numériques** qui permettent de **retrouver** le point. Remarquons aussi que ces coordonnées ne décrivent pas tout l'espace d'un seul coup sans ambiguïté : un système de coordonnées est toujours **local**.
+
+**Les coordonnées engendrent un repère en chaque point.** Un système de coordonnées ne sert pas seulement à nommer les points. Il engendre aussi des directions naturelles en chaque point. L'idée est la suivante : à partir d'un point donné, on fait varier une seule coordonnée, en gardant les autres constantes. On obtient alors une courbe dans l'espace. La vitesse initiale de cette courbe donne une direction.
+
+Soit $$p = \Phi(q^1, \dots, q^N)$$. Pour obtenir la $$i$$-ème direction de coordonnées, on regarde la courbe $$\gamma_i(t) = \Phi \big( q^1, \dots, q^i + t, \dots, q^N)$$. Sa vitesse en $$t=0$$ donne un vecteur (tangent) en $$p$$ : 
+
+$$\overrightarrow{e_i^{(\Phi)}}(p) = \frac{\partial \Phi}{\partial q^i}(q).$$
