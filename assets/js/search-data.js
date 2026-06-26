@@ -51,15 +51,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-",
+        },{id: "post-fr-champs-de-vecteurs-ou-fonctions",
         
-          title: "",
+          title: "[FR] Champs de vecteurs ou fonctions?",
         
-        description: "",
+        description: "Les champs de vecteurs sont introduits souvent comme des fonctions, mais cette présentation est trompeuse et surtout incohérente avec l&#39;usage que l&#39;on en a en physique. L&#39;objectif de ce billet de blog est de rétablir la différence entre ces deux concepts proches et aussi d&#39;expliquer pourquoi ces confusions sont faites.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/2026-06-26-champs-fonctions/";
+            window.location.href = "/blog/2026/champs-fonctions/";
           
         },
       },{id: "post-fr-limites-inductive-et-projective-deux-objets-limites-différents",
