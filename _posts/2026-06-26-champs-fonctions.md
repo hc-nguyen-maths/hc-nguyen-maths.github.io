@@ -81,7 +81,7 @@ Big) \in \mathbb{R}^3 \setminus \left\{ (x,0,z) \in \mathbb{R}^3, \; x \leqslant
 
 ou encore, 
 
-$$\Phi_{\text{sphérique}} : (r,\theta,\varphi) \in \; ]0,+\infty[ \; \times ]0,\pi[ \; \times \; ]-\pi, \pi[ \; \longmapsto \Big( r \sin(\theta) \cos(\varphi), r \sin(\theta) \sin(\varphi), r \cos(\theta) \Big) \in \; ]0+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi,\pi[.$$
+$$\Phi_{\text{sphérique}} : (r,\theta,\varphi) \in \; ]0,+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi, \pi[ \; \longmapsto \Big( r \sin(\theta) \cos(\varphi), r \sin(\theta) \sin(\varphi), r \cos(\theta) \Big) \in \; ]0+\infty[ \; \times \; ]0,\pi[ \; \times \; ]-\pi,\pi[.$$
 
 Les nombres $$(\rho, \theta, z)$$ (ou $$(\rho,\theta,\varphi)$$) ne sont donc pas le point lui-même : ce sont des **étiquettes numériques** qui permettent de **retrouver** le point. Remarquons aussi que ces coordonnées ne décrivent pas tout l'espace d'un seul coup sans ambiguïté : un système de coordonnées est toujours **local**.
 
@@ -100,3 +100,19 @@ Par exemple, pour les coordonnées cylindriques $$\Phi(r, \theta, z) = \Big( r \
 $$\overrightarrow{E_r} = \big( \cos \theta, \sin \theta, 0 \big), \quad \overrightarrow{E_{\theta}} = \big( - r \sin \theta, r \cos \theta, 0 \big) \quad \text{et} \quad \overrightarrow{E_z} = (0,0,1).$$
 
 On a alors le repère de coordonnées $$\Big( \overrightarrow{E_r}, \overrightarrow{E_{\theta}}, \overrightarrow{E_z} \Big)$$. Mais ce repère n'est pas orthonormé, en effet, $$\big\| \overrightarrow{E_{\theta}} \big\| = r$$. C'est normal : changer l'angle $$\theta$$ d'une petite quantité ne produit pas le même déplacement selon que l'on soit près ou loin de l'axe. Sur un cercle de rayon $$r$$, une variation infinitésimale $$\mathrm{d} \theta$$ correspond à une longueur $$r \mathrm{d} \theta$$. C'est pour cela que les physiciens introduisent souvent la version "renormalisée" du repère précédent avec $$\overrightarrow{e_{\theta}} = \frac{1}{r} \overrightarrow{E_{\theta}}$$.
+
+**Champs de vecteurs dans un système de coordonnées.** Soit maintenant $$\overrightarrow{V}$$ un champ de vecteurs défini sur l'ouvert $$U$$. Cela signifie qu'à chaque point $$p \in U$$, on associe un vecteur (tangent) $$\overrightarrow{V}(p)$$ situé en $$p$$. Si l'on choisit un système de coordonnées 
+
+$$\Phi : \Omega \subset \mathbb{R}^N \longrightarrow U \subset \mathbb{R}^N.$$
+
+alors, les coordonnées $$\Phi$$ engendrent en chaque point $$p = \Phi(q)$$ un repère $$\Big( \overrightarrow{E_{i,\Phi}}(p) \Big)_{1 \leqslant i \leqslant N}$$. On peut donc décomposer le vecteur $$\overrightarrow{V}(p)$$ dans cette base : 
+
+$$\overrightarrow{V}(p) = V^1_{\Phi}(q) \overrightarrow{E_{1,\Phi}}(p) + \cdots + V^N_{\Phi}(q) \overrightarrow{E_{N,\Phi}}(p).$$
+
+Les fonctions $$V^i_{\Phi} : \Omega \rightarrow \mathbb{R}$$ sont les composantes du champ de vecteurs $$\overrightarrow{V}$$ dans le système de coordonnées donné par $$\Phi$$. Il faut bien noter que ces composantes dépendent du choix de coordonnées. Le champ de vecteurs $$\overrightarrow{V}$$, lui, est l'objet géométrique : c'est la flèche attachée à chaque point.
+
+En notation matricielle, on note $$\overrightarrow{V}_{\Phi}(q) = \begin{pmatrix} V_{\Phi}^1(q) \\ \vdots \\ V_{\Phi}^N(q) \end{pmatrix}$$ la colonne des composantes. Cette colonne de composante représente l'objet géométrique $$\overrightarrow{V}(p)$$ et y est reliée par 
+
+$$\overrightarrow{V}(p) = \mathrm{d} \Phi(q) \cdot \Big( \overrightarrow{V}_{\Phi}(q) \Big).$$
+
+Cette relation nous dit que pour obtenir les composantes du champ de vecteurs dans les coordonnées $$\Phi$$, on évalue d'abord le champ au point physique $$p=\Phi(q)$$, puis on exprime le vecteur obtenu dans le repère engendré par les coordonnées.
