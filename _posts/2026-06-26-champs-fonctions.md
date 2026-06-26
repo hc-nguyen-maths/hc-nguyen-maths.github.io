@@ -33,4 +33,18 @@ En revanche, un champ de vecteurs n'est pas seulement la donnée de trois nombre
 
 $$\overrightarrow{V}(x,y,z) = V_x(x,y,z) \overrightarrow{e_x} + V_y(x,y,z) \overrightarrow{e_y} + V_z(x,y,z) \overrightarrow{e_z},$$
 
-où $$\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z}$$ désignent les directions cartésiennes usuelles.
+où $$\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z}$$ désignent les directions cartésiennes usuelles. La différence importante est que les nombres $$V_x$$, $$V_y$$ et $$V_z$$ ne sont pas trois fonctions scalaires indépendantes. Ce sont les **composantes** du vecteur dans le repère **cartésien**. Lorsque l'on passe en coordonnées cylindriques, on ne fait donc pas que réécrire les fonctions en remplaçant $$x,y,z$$ par $$\rho, \theta, z$$. Il faut aussi changer de repère.
+
+En coordonnées cylindriques, les directions naturelles sont $$\overrightarrow{e_{\rho}}$$, $$\overrightarrow{e_{\theta}}$$ et $$\overrightarrow{e_z}$$ qui dépendent du point considéré ! Typiquement,
+
+$$\overrightarrow{e_{\rho}} = \cos(\theta) \overrightarrow{e_x} + \sin(\theta) \overrightarrow{e_y} \qquad \text{et} \qquad \overrightarrow{e_{\theta}} = - \sin(\theta) \overrightarrow{e_x} + \cos(\theta) \overrightarrow{e_y}.$$
+
+Donc le même champ de vecteurs peut aussi s'écrire
+
+$$\overrightarrow{V} = V_{\rho} \overrightarrow{e_{\rho}} + V_{\theta} \overrightarrow{e_{\theta}} + V_z \overrightarrow{e_z}.$$
+
+Les composantes cylindriques sont alors données par 
+
+$$V_{\rho}(\rho, \theta, z) = \cos(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \sin(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z), \qquad V_{\theta}(\rho, \theta, z) = - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z).$$
+
+Cette fois, les composantes se mélangent. C'est cela la différence essentielle.
