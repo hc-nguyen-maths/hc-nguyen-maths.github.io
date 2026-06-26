@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-fr-limites-inductive-et-projective-deux-objets-limites-différents",
+        },{id: "post-",
+        
+          title: "",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/2026-06-26-champs-fonctions/";
+          
+        },
+      },{id: "post-fr-limites-inductive-et-projective-deux-objets-limites-différents",
         
           title: "[FR] Limites inductive et projective -- Deux objets limites différents",
         
