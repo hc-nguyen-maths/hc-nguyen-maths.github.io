@@ -99,7 +99,9 @@ Par exemple, pour les coordonnées cylindriques $$\Phi(r, \theta, z) = \Big( r \
 
 $$\overrightarrow{E_r} = \big( \cos \theta, \sin \theta, 0 \big), \quad \overrightarrow{E_{\theta}} = \big( - r \sin \theta, r \cos \theta, 0 \big) \quad \text{et} \quad \overrightarrow{E_z} = (0,0,1).$$
 
-On a alors le repère de coordonnées $$\Big( \overrightarrow{E_r}, \overrightarrow{E_{\theta}}, \overrightarrow{E_z} \Big)$$. Mais ce repère n'est pas orthonormé, en effet, $$\big\| \overrightarrow{E_{\theta}} \big\| = r$$. C'est normal : changer l'angle $$\theta$$ d'une petite quantité ne produit pas le même déplacement selon que l'on soit près ou loin de l'axe. Sur un cercle de rayon $$r$$, une variation infinitésimale $$\mathrm{d} \theta$$ correspond à une longueur $$r \mathrm{d} \theta$$. C'est pour cela que les physiciens introduisent souvent la version "renormalisée" du repère précédent avec $$\overrightarrow{e_{\theta}} = \frac{1}{r} \overrightarrow{E_{\theta}}$$.
+On a alors le repère de coordonnées $$\Big( \overrightarrow{E_r}, \overrightarrow{E_{\theta}}, \overrightarrow{E_z} \Big)$$. Mais ce repère n'est pas orthonormé, en effet, $$\big\| \overrightarrow{E_{\theta}} \big\| = r$$. C'est normal : changer l'angle $$\theta$$ d'une petite quantité ne produit pas le même déplacement selon que l'on soit près ou loin de l'axe. Sur un cercle de rayon $$r$$, une variation infinitésimale $$\mathrm{d} \theta$$ correspond à une longueur $$r \mathrm{d} \theta$$. C'est pour cela que les physiciens introduisent souvent la version "renormalisée" du repère précédent avec $$\overrightarrow{e_{\theta}} = \frac{1}{r} \overrightarrow{E_{\theta}}$$. En résumé, 
+
+$$\boxed{\text{Un système de coordonnées ne fait pas que renommer les points : il fournit aussi un repère naturel en chaque point.}}$$
 
 **Champs de vecteurs dans un système de coordonnées.** Soit maintenant $$\overrightarrow{V}$$ un champ de vecteurs défini sur l'ouvert $$U$$. Cela signifie qu'à chaque point $$p \in U$$, on associe un vecteur (tangent) $$\overrightarrow{V}(p)$$ situé en $$p$$. Si l'on choisit un système de coordonnées 
 
@@ -117,4 +119,4 @@ $$\overrightarrow{V}(p) = \mathrm{d} \Phi(q) \cdot \Big( \overrightarrow{V}_{\Ph
 
 Cette relation nous dit que pour obtenir les composantes du champ de vecteurs dans les coordonnées $$\Phi$$, on évalue d'abord le champ au point physique $$p=\Phi(q)$$, puis on exprime le vecteur obtenu dans le repère engendré par les coordonnées. En résumé,
 
-$$\boxed{ \text{Un changement de coordonnées ne réécrit pas seulement les points : il change aussi le repère local, et donc la manière dont un champ de vecteurs est représenté.}}$$
+$$\boxed{ \text{Un champ de vecteurs ressemble à une fonction, seulement } \textbf{après } \text{avoir choisi des coordonnées.}}$$
