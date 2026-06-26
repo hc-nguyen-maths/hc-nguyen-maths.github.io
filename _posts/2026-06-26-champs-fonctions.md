@@ -120,3 +120,7 @@ $$\overrightarrow{V}(p) = \mathrm{d} \Phi(q) \cdot \Big( \overrightarrow{V}_{\Ph
 Cette relation nous dit que pour obtenir les composantes du champ de vecteurs dans les coordonnées $$\Phi$$, on évalue d'abord le champ au point physique $$p=\Phi(q)$$, puis on exprime le vecteur obtenu dans le repère engendré par les coordonnées. En résumé,
 
 $$\boxed{ \text{Un champ de vecteurs ressemble à une fonction, seulement } \textbf{après } \text{avoir choisi des coordonnées.}}$$
+
+## Le point de vue avancé de la géométrie différentielle
+
+Cette section est d'un niveau nettement plus avancé que les sections précédentes et traite de la géométrie des fibrés.
