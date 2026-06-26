@@ -87,6 +87,16 @@ Les nombres $$(\rho, \theta, z)$$ (ou $$(\rho,\theta,\varphi)$$) ne sont donc pa
 
 **Les coordonnées engendrent un repère en chaque point.** Un système de coordonnées ne sert pas seulement à nommer les points. Il engendre aussi des directions naturelles en chaque point. L'idée est la suivante : à partir d'un point donné, on fait varier une seule coordonnée, en gardant les autres constantes. On obtient alors une courbe dans l'espace. La vitesse initiale de cette courbe donne une direction.
 
-Soit $$p = \Phi(q^1, \dots, q^N)$$. Pour obtenir la $$i$$-ème direction de coordonnées, on regarde la courbe $$\gamma_i(t) = \Phi \big( q^1, \dots, q^i + t, \dots, q^N)$$. Sa vitesse en $$t=0$$ donne un vecteur (tangent) en $$p$$ : 
+Soit $$p = \Phi(q^1, \dots, q^N)$$. Pour obtenir la $$i$$-ème direction de coordonnées, on regarde la courbe $$\gamma_i(t) = \Phi \big( q^1, \dots, q^i + t, \dots, q^N)$$. Cette courbe passe par $$p$$ en $$t=0$$ et sa vitesse en $$t=0$$ donne un vecteur (tangent) en $$p$$ : 
 
-$$\overrightarrow{e_i^{(\Phi)}}(p) = \frac{\partial \Phi}{\partial q^i}(q).$$
+$$\overrightarrow{E_{i,\Phi}}(p) = \dot{\gamma_i}(0) = \frac{\partial \Phi}{\partial q^i}(q).$$
+
+Ces vecteurs $$\Big( \overrightarrow{E_{i,\Phi}}(p) \Big)_{1 \leqslant i \leqslant N}$$ sont les directions naturelles engendrées par le système de coordonnées $$\Phi$$. Comme $$\Phi$$ est un difféomorphisme, sa matrice jacobienne est inversible en tout point et donc les vecteurs précédents sont linéairement indépendants : ils forment ainsi un repère (affine) en $$p$$. 
+
+Autrement dit, un système de coordonnées ne produit pas seulement une manière d'écrire les points $$p = \Phi(q^1, \dots, q^N)$$, il produit aussi, en chaque point $$p$$, un repère local $$\Big( \overrightarrow{E_{i,\Phi}}(p) \Big)_{1 \leqslant i \leqslant N}$$. C'est dans ce repère que l'on pourra ensuite écrire les composantes d'un champ de vecteurs.
+
+Par exemple, pour les coordonnées cylindriques $$\Phi(r, \theta, z) = \Big( r \cos(\theta), r \sin(\theta), z \Big)$$, les directions engendrées par les coordonnées sont 
+
+$$\overrightarrow{E_r} = \big( \cos \theta, \sin \theta, 0 \big), \quad \overrightarrow{E_{\theta}} = \big( - r \sin \theta, r \cos \theta, 0 \big) \quad \text{et} \quad \overrightarrow{E_z} = (0,0,1).$$
+
+On a alors le repère de coordonnées $$\Big( \overrightarrow{E_r}, \overrightarrow{E_{\theta}}, \overrightarrow{E_z} \Big)$$. Mais ce repère n'est pas orthonormé, en effet, $$\big\| \overrightarrow{E_{\theta}} \big\| = r$$. C'est normal : changer l'angle $$\theta$$ d'une petite quantité ne produit pas le même déplacement selon que l'on soit près ou loin de l'axe. Sur un cercle de rayon $$r$$, une variation infinitésimale $$\mathrm{d} \theta$$ correspond à une longueur $$r \mathrm{d} \theta$$. C'est pour cela que les physiciens introduisent souvent la version "renormalisée" du repère précédent avec $$\overrightarrow{e_{\theta}} = \frac{1}{r} \overrightarrow{E_{\theta}}$$.
