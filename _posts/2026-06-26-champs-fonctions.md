@@ -122,4 +122,33 @@ $$\boxed{ \text{Un champ de vecteurs ressemble à une fonction, seulement } \tex
 
 ## Le point de vue avancé de la géométrie différentielle
 
-Cette section est d'un niveau nettement plus avancé que les sections précédentes et traite de la géométrie des fibrés.
+Cette section est d'un niveau nettement plus avancé que les sections précédentes et traite de la géométrie des fibrés. Jusqu'ici, nous avons parlé de vecteurs tangents "situés en un point". Cette précision est importante : le vecteur $$\overrightarrow{V}(p)$$ n'est pas seulement un élément abstrait de $$\mathbb{R}^N$$, c'est un vecteur tangent au point $$p$$. Pour garder trace de cette information, on introduit le **fibré tangent**. Si $$U$$ est un ouvert de $$\mathbb{R}^N$$, on note 
+
+$$TU = \bigsqcup \limits_{p \in U} T_p U$$
+
+l'ensemble obtenu en rassemblant tous les espaces tangents $$T_p U$$. Il vient avec une projection naturelle $$\pi : TU \longrightarrow U$$ qui envoie un vecteur tangent sur son point d'attache. Autrement dit, si $$v \in T_p U$$, alors $$\pi(v) = p$$. Dans ce langage, un champ de vecteurs sur $$U$$ est une application $$\overrightarrow{V} : U \longrightarrow TU$$ telle que $$\pi \big( \overrightarrow{V}(p) \big) = p$$ pour tout $$p \in U$$. On dit que $$\overrightarrow{V}$$ est une **section du fibré tangent** : à chaque point $$p$$, elle choisit un vecteur dans la fibre $$T_p U$$.
+
+Cette définition met au clair la différence fondamentale avec une fonction $$f : U \longrightarrow \mathbb{R}^N$$. Une telle fonction envoie tous les points de $$U$$ vers un même espace **fixe** $$\mathbb{R}^N$$. Un champ de vecteurs, lui, envoie chaque point $$p \in U$$ vers un espace qui dépend de $$p$$, à savoir $$T_p U$$.
+
+La confusion (ou l'abus) vient alors du fait que tous les espaces tangents $$T_p U$$ peuvent être identifiés à $$\mathbb{R}^N$$. Mais cette identification cache une idée importante : le choix d'une **trivialisation** (ou de coordonnées). Un fibré trivial est un fibré qui est donné comme un produit $$U \times \mathbb{R}^N$$. Dans ce cas, la fibre au-dessus de $$p$$ est simplement $$\left\{ p \right\} \times \mathbb{R}^N \cong \mathbb{R}^N$$. 
+
+Un fibré **trivialisable** $$E$$, en revanche, n'est pas forcément présenté comme un produit dès le départ. Il peut le **devenir** après avoir choisi une identification (globale) avec un produit. Autrement dit, dire qu'un fibré est trivialisable signifie qu'il existe un isomorphisme 
+
+$$E \cong U \times \mathbb{R}^N,$$
+
+mais cet isomorphisme est un **choix**. Cette distinction est exactement le phénomène reflété par le choix de coordonnées : un système de coordonnées $$\Phi$$ permet d'identifier les vecteurs tangents avec des colonnes de nombres comme décrit dans le paragraphe précédent. En fait, la différentielle induit un isomorphisme 
+
+$$\mathrm{d} \Phi : \mathbb{R}^N \overset{\cong} \longrightarrow T_{\Phi(q)} U.$$
+
+Ainsi, le choix de $$\Phi$$ donne une trivialisation locale du fibré tangent : il permet d'écrire localement 
+
+$$TU \overset{\Phi} \cong \Omega \times \mathbb{R}^N.$$
+
+Mais cette identification n'est pas l'objet géométrique lui-même. Elle est une manière de le décrire après un choix de coordonnées. C'est pourquoi un champ de vecteurs peut être représenté par une fonction $$\overrightarrow{V}_{\Phi} : \Omega \longrightarrow \mathbb{R}^N$$ seulement après avoir choisi une trivialisation. Cette fonction $$\overrightarrow{V}_{\Phi}$$ est la colonne des composantes du champ dans le repère défini par $$\Phi$$. Mais si on change de coordonnées, on change de trivialisation, donc les composantes changent.
+
+La morale finale est la suivante : 
+
+$$\boxed{\text{Un champ de vecteurs n’est pas une fonction } U\to\mathbb R^N.
+\text{ Il le devient seulement après le choix d’une trivialisation du fibré tangent.}}$$
+
+En coordonnées cartésiennes, cette trivialisation est si naturelle qu'elle devient invisible. C'est précisément pour cela que l'abus de notations est fréquent. Mais dès que l'on change de coordonnées (ce qui est fait naturellement et régulièrement en physique), ou que l'on travaille sur une variété plus générale, la différence réapparaît : le champ de vecteurs est l'objet géométrique que l'on peut **représenter** comme une fonction à valeurs dans $$\mathbb{R}^N$$ **après** avoir choisi une trivialisation, ou un système de coordonnées.
