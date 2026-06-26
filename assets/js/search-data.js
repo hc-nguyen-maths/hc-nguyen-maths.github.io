@@ -73,17 +73,6 @@ ninja.data = [{
             window.location.href = "/blog/2026/trace/";
           
         },
-      },{id: "post-fr-union-d-39-ensembles-et-somme-d-39-espaces-plus-qu-39-une-analogie-une-universalité",
-        
-          title: "[FR] Union d&#39;ensembles et somme d&#39;espaces : plus qu&#39;une analogie, une universalité",
-        
-        description: "Une confusion fréquente pour les apprenants d&#39;algèbre linéaire, mais qui cache une profondeur algébrique",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/somme-union/";
-          
-        },
       },{id: "post-fr-le-miracle-de-la-table-de-multiplication",
         
           title: "[FR] Le miracle de la table de multiplication",
@@ -117,6 +106,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-troisième-billet-de-blog-fr-la-trace-des-endomorphismes-third-blog-post-fr-la-trace-des-endomorphismes",
           title: '🇫🇷 Troisième billet de blog : [FR] La trace des endomorphismes. 🇬🇧 Third...',
+          description: "",
+          section: "News",},{id: "news-quatrième-billet-de-blog-fr-limites-inductive-et-projective-deux-objets-limites-différents-fourth-blog-post-fr-limites-inductive-et-projective-deux-objets-limites-différents",
+          title: '🇫🇷 Quatrième billet de blog : [FR] Limites inductive et projective – Deux...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
