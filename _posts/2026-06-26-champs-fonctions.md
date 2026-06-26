@@ -76,8 +76,7 @@ $$\Phi : \Omega \subset \mathbb{R}^N \longrightarrow U \subset \mathbb{R}^N,$$
 
 c'est-à-dire $$\Phi$$ est une application de classe $${\mathcal C}^1$$ bijective, dont la bijection réciproque est aussi lisse. Ici, $$\Omega$$ est l'espace des coordonnées, et $$U$$ est la région physique de l'espace que l'on décrit. Si $$q = (q^1, \dots, q^N) \in \Omega$$, alors $$p = \Phi(q)$$ est le point de l'espace correspondant à ces coordonnées. Par exemple, on a 
 
-$$\Phi_{\text{cylindrique}} : (\rho, \theta, z) \in \; ]0,+\infty[ \; \times \; ]-\pi, \pi[ \; \times \mathbb{R} \longmapsto \Big( \rho \cos(\theta), \rho \sin(\theta), z \
-Big) \in \mathbb{R}^3 \setminus \left\{ (x,0,z) \in \mathbb{R}^3, \; x \leqslant 0 \right\}.$$
+$$\Phi_{\text{cylindrique}} : (\rho, \theta, z) \in \; ]0,+\infty[ \; \times \; ]-\pi, \pi[ \; \times \mathbb{R} \longmapsto \Big( \rho \cos(\theta), \rho \sin(\theta), z \Big) \in \mathbb{R}^3 \setminus \left\{ (x,0,z) \in \mathbb{R}^3, \; x \leqslant 0 \right\}.$$
 
 ou encore, 
 
