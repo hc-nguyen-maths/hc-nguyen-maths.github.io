@@ -59,6 +59,6 @@ $$\widetilde{\overrightarrow{V}} = \mathrm{d} \Phi^{-1} \circ V \circ \Phi,$$
 
 où $$\mathrm{d} \Phi$$ est la différentielle de $$\Phi$$. La morale physique est donc : 
 
-$$\boxed{Une fonction vectorielle donne trois nombres; un champ de vecteurs donne une flèche.}$$
+$$\boxed{\text{Une fonction vectorielle donne trois nombres; un champ de vecteurs donne une flèche.}}$$
 
 Et une flèche ne se transforme pas comme une simple liste de trois fonctions scalaires : ses composantes dépendent du repère dans lequel on la décrit.
