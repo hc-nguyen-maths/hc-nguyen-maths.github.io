@@ -1,5 +1,5 @@
 ---
-date:
+date: 2026-08-10
 layout: post
 title: "[FR] Union d'ensembles et somme d'espaces : plus qu'une analogie, une universalité"
 description: "Une confusion fréquente pour les apprenants d'algèbre linéaire, mais qui cache une profondeur algébrique"
