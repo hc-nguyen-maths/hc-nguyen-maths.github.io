@@ -2,7 +2,7 @@
 date: 2026-06-26
 layout: post
 title: "[FR] Champs de vecteurs ou fonctions?"
-description: "Les champs de vecteurs sont introduits souvent comme des fonctions de $$\mathbb{R}^n$$ dans $$\mathbb{R}^n$$, mais cette présentation est trompeuse et surtout incohérente avec l'usage que l'on en a en physique. L'objectif de ce billet de blog est de rétablir la différence entre ces deux concepts proches et aussi d'expliquer pourquoi ces confusions sont faites."
+description: "Les champs de vecteurs sont introduits souvent comme des fonctions, mais cette présentation est trompeuse et surtout incohérente avec l'usage que l'on en a en physique. L'objectif de ce billet de blog est de rétablir la différence entre ces deux concepts proches et aussi d'expliquer pourquoi ces confusions sont faites."
 tags: [géométrie, calcul différentiel, vulgarisation]
 categories: [fr]
 related_posts: false
