@@ -65,3 +65,21 @@ où $$\mathrm{d} \Phi$$ est la différentielle de $$\Phi$$. La morale physique e
 $$\boxed{\text{Une fonction vectorielle donne trois nombres; un champ de vecteurs donne une flèche.}}$$
 
 Et une flèche ne se transforme pas comme une simple liste de trois fonctions scalaires : ses composantes dépendent du repère dans lequel on la décrit.
+
+## Systèmes de coordonnées
+
+Repassons à une description mathématique cohérente. Avant de comparer une fonction à valeurs vectorielles et un champ de vecteurs, il faut préciser ce que l'on entendait dans le paragraphe précédent par "**coordonnées**". L'idée physique est simple : un système de coordonnées est une manière simplement de repérer les points de l'espace par des nombres. Par exemple, dans l'espace usuel $$\mathbb{R}^3$$, les coordonnées cartésiennes repèrent un point par $$(x,y,z)$$ tandis que les coordonnées cylindriques le repèrent par $$(\rho, \theta, z)$$.
+
+Mathématiquement, un système de coordonnées sur un ouvert $$U \subset \mathbb{R}^N$$ est donnée par un $${\mathcal C}^1$$-difféomorphisme entre un ouvert $$\Omega$$ de $$\mathbb{R}^N$$ et $$U$$ :
+
+$$\Phi : \Omega \subset \mathbb{R}^N \longrightarrow U \subset \mathbb{R}^N,$$
+
+c'est-à-dire $$\Phi$$ est une application de classe $${\mathcal C}^1$$ bijective, dont la bijection réciproque est aussi lisse. Ici, $$\Omega$$ est l'espace des coordonnées, et $$U$$ est la région physique de l'espace que l'on décrit. Si $$q = (q^1, q^2, q^3) \in \Omega$$, alors $$p = \Phi(q)$$ est le point de l'espace correspondant à ces coordonnées. Par exemple, on a 
+
+$$\Phi_{\text{cylindrique}} : (\rho, \theta, z) \in ... \longmapsto \big( \rho \cos(\theta), \rho \sin(\theta), z \big) \in ...$$
+
+ou encore, 
+
+$$\Phi_{\text{sphérique}} : ...$
+
+Les nombres $$(\rho, \theta, z)$$ (ou $$(\rho,\theta,\varphi)$$) ne sont donc pas le point lui-même : ce sont des **étiquettes numériques** qui permettent de **retrouver** le point.
