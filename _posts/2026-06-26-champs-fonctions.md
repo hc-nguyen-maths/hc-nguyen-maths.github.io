@@ -48,3 +48,17 @@ Les composantes cylindriques sont alors données par
 $$V_{\rho}(\rho, \theta, z) = \cos(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \sin(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z), \qquad V_{\theta}(\rho, \theta, z) = - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z).$$
 
 Cette fois, les composantes se mélangent. C'est cela la différence essentielle.
+
+Pour une fonction à valeurs dans $$\mathbb{R}^3$$, vue comme trois fonctions scalaires, le changement de coordonnées, représenté par un $${\mathcal C}^1$$-difféomorphisme $$\Phi$$ donne seulement : 
+
+$$\widetilde{f} = f \circ \Phi.$$
+
+Pour un champ de vecteurs, les composantes changent aussi parce que la base change : $$(V_x, V_y, V_z) \longrightarrow (V_{\rho}, V_{\theta}, V_z)$$. En fait, la loi de changement de coordonnées est donnée par 
+
+$$\widetilde{\overrightarrow{V}} = \mathrm{d} \Phi^{-1} \circ V \circ \Phi,$$
+
+où $$\mathrm{d} \Phi$$ est la différentielle de $$\Phi$$. La morale physique est donc : 
+
+$$\boxed{Une fonction vectorielle donne trois nombres; un champ de vecteurs donne une flèche.}$$
+
+Et une flèche ne se transforme pas comme une simple liste de trois fonctions scalaires : ses composantes dépendent du repère dans lequel on la décrit.
