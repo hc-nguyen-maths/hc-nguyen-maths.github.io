@@ -45,7 +45,10 @@ $$\overrightarrow{V} = V_{\rho} \overrightarrow{e_{\rho}} + V_{\theta} \overrigh
 
 Les composantes cylindriques sont alors données par 
 
-$$V_{\rho}(\rho, \theta, z) = \cos(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \sin(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z), \qquad V_{\theta}(\rho, \theta, z) = - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z).$$
+$$\left\{ \begin{array}{lll}
+V_{\rho}(\rho, \theta, z) &=& \cos(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + \sin(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\
+V_{\theta}(\rho, \theta, z) &=& - \sin(\theta) V_x(\rho \cos \theta, \rho \sin \theta, z) + cos(\theta) V_y(\rho \cos \theta, \rho \sin \theta, z) \\ 
+V_z(\rho, \theta, z) &=& V_z(\rho \cos \theta, \rho \sin \theta, z) \end{array}.$$
 
 Cette fois, les composantes se mélangent. C'est cela la différence essentielle.
 
