@@ -116,6 +116,10 @@ En notation matricielle, on note $$\overrightarrow{V}_{\Phi}(q) = \begin{pmatrix
 
 $$\overrightarrow{V}(p) = \mathrm{d} \Phi(q) \cdot \Big( \overrightarrow{V}_{\Phi}(q) \Big).$$
 
+Cette relation permet de reconstruire le vecteur géométrique à partir de sa colonne de composantes. En inversant cette relation, on obtient 
+
+$$\overrightarrow{V}_{\Phi}(q) = \Big( \mathrm{d} \Phi(q) \Big)^{-1} \cdot \overrightarrow{V} \big( \Phi(q) \big).$$
+
 Cette relation nous dit que pour obtenir les composantes du champ de vecteurs dans les coordonnées $$\Phi$$, on évalue d'abord le champ au point physique $$p=\Phi(q)$$, puis on exprime le vecteur obtenu dans le repère engendré par les coordonnées. En résumé,
 
 $$\boxed{ \text{Un champ de vecteurs ressemble à une fonction, seulement } \textbf{après } \text{avoir choisi des coordonnées.}}$$
