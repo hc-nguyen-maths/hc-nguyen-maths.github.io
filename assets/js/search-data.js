@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-fr-champs-de-vecteurs-ou-fonctions",
+        },{id: "post-fr-union-d-39-ensembles-et-somme-d-39-espaces-plus-qu-39-une-analogie-une-universalité",
+        
+          title: "[FR] Union d&#39;ensembles et somme d&#39;espaces : plus qu&#39;une analogie, une universalité",
+        
+        description: "Une confusion fréquente pour les apprenants d&#39;algèbre linéaire, mais qui cache une profondeur algébrique",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/somme-union/";
+          
+        },
+      },{id: "post-fr-champs-de-vecteurs-ou-fonctions",
         
           title: "[FR] Champs de vecteurs ou fonctions?",
         
